@@ -1,0 +1,736 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    font-family: 'Times New Roman', Times, sans-serif;
+
+}
+
+
+:root {
+    --link: #fff;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --background: #000000;
+    --btn: #FF8C00;
+}
+
+
+/* html */
+
+
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+/* section */
+
+
+section {
+    padding-top: 8rem;
+    margin-bottom: 20rem;
+
+}
+
+
+
+
+/* id */
+
+#home,
+#sobre,
+#avaliacoes,
+#endereco {
+    scroll-margin-top: 7rem;
+}
+
+
+
+
+
+/* Body */
+
+body {
+    background-color: var(--background);
+    overflow-x: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+
+
+/* Header */
+
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: var(--border);
+    background-color: var(--background);
+
+
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1rem 2rem;
+
+}
+
+
+.menu {
+    display: flex;
+    margin-left: 15rem;
+    gap: 20px;
+
+}
+
+
+
+.menu li {
+    list-style-type: none;
+}
+
+
+
+
+.menu a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    color: #FFD700;
+
+}
+
+
+
+.menu a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: var(--link);
+    margin-top: 30px;
+    left: 0;
+    transition: width 0.9s ease;
+    margin-top: 30px;
+}
+
+
+
+.menu a:hover::after {
+    width: 100%;
+
+}
+
+
+
+
+
+.menu a:hover {
+    color: #ddd;
+}
+
+
+
+
+/* Icons */
+
+.icons {
+    display: flex;
+    gap: 18px;
+    margin-left: 10rem;
+    cursor: pointer;
+}
+
+
+.fa-solid {
+    color: var(--link);
+}
+
+
+
+
+.icons i:hover {
+    transform: scale(1.8);
+}
+
+
+
+
+/* Section home */
+
+.home_container {
+    background-image: url(../imagens/home-img.jpg);
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    margin-bottom: 10rem;
+}
+
+
+.content {
+    max-width: 600px;
+    height: 400px;
+    padding: 2rem;
+
+}
+
+
+
+.title-home {
+    color: var(--link);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+
+
+}
+
+
+
+.paragraf {
+    color: var(--link);
+    line-height: 1.7;
+    padding: 1.5rem 0;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-size: 1.1rem;
+
+
+
+}
+
+
+/* Botão */
+
+
+.btn {
+    background-color: var(--btn);
+    display: inline-block;
+    padding: .5rem 2.2rem;
+    margin-top: 1.5rem;
+    color: var(--link);
+    text-transform: none;
+    border-radius: 2px;
+}
+
+
+
+
+.btn:hover {
+    letter-spacing: .1rem;
+}
+
+
+/* Sobre */
+
+
+.title {
+    font-size: 3rem;
+    color: var(--link);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem 0;
+    padding-top: 3rem;
+
+}
+
+
+
+.title span {
+    text-transform: uppercase;
+    color: var(--btn);
+}
+
+
+
+
+.row-sobre {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+.row-sobre h3 {
+    color: var(--link);
+    font-size: 2rem;
+    text-transform: none;
+
+}
+
+
+
+/* Sessão menu */
+
+.row-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+
+
+
+.box .row-menu .conteudo-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 3rem;
+}
+
+
+
+.box .row-menu .conteudo-card img {
+    height: 4rem;
+}
+
+
+.box .row-menu .conteudo-card h4 {
+    color: var(--link);
+    padding: 1rem 0;
+    font-weight: 100;
+}
+
+
+
+.price {
+    color: var(--link);
+
+}
+
+
+.price span {
+    text-decoration: line-through;
+    font-size: .8rem;
+}
+
+
+/* Botão */
+
+.box .row-menu .conteudo-card:hover {
+    background-color: var(--link);
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+
+.box .row-menu .conteudo-card:hover>* {
+    color: var(--background);
+}
+
+
+
+/* Avaliações */
+
+
+.row-avaliacoes {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+
+.row-avaliacoes .card_avaliacoes {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+
+.row-avaliacoes .card_avaliacoes .user {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+.row-avaliacoes .card_avaliacoes h3 {
+    color: var(--link);
+    padding: 1rem;
+}
+
+
+.paragraf_client {
+    font-size: .8rem;
+    padding: .5rem;
+    color: #ddd;
+    line-height: 20px;
+}
+
+
+
+
+/* Endereço */
+
+
+.google-maps {
+    text-align: center;
+}
+
+
+/* Rede socias */
+
+footer .share svg {
+    width: 30px;
+    height: 30px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Media Query */
+
+
+/*Celular 480px*/
+
+@media(max-width: 480px) {
+
+
+    /* Logo */
+
+    .logo img {
+        width: 50px;
+        margin-left: 10rem;
+
+    }
+
+
+    .menu {
+        margin-left: 3rem;
+    }
+
+
+
+    .menu li {
+        font-size: .7rem;
+    }
+
+
+    /* Sessão home */
+
+    .home_container {
+        background-image: none !important;
+        width: 100vw;
+
+    }
+
+    .title-home {
+        font-size: 1.7rem;
+        line-height: 40px;
+        color: #ddd;
+    }
+
+
+    .paragraf {
+        font-size: .9rem;
+        text-align: left;
+
+
+    }
+
+
+    /* Sessão sobre */
+
+
+    .title {
+        font-size: 1.7rem;
+
+    }
+
+
+
+    .row-sobre {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80vw;
+        margin: 0 auto;
+
+    }
+
+
+
+    .row-sobre img {
+        width: 400px;
+    }
+
+
+    .conteudo-texto h3 {
+        font-size: 1.7rem;
+    }
+
+
+
+    /* Sessão menu */
+
+    .conteudo-card {
+        margin: .5rem;
+        border-radius: 7px;
+    }
+
+
+    /* Sessão avaliações */
+
+
+    .row-avaliacoes {
+        flex-wrap: wrap;
+        padding: .5rem;
+
+    }
+
+
+    .paragraf_client {
+        font-size: .8rem;
+        text-align: left;
+
+
+
+
+    }
+
+
+
+    .decoracao {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+
+
+    /* Endereço */
+
+    .google-maps iframe {
+        width: 470px;
+        height: 400px;
+    }
+
+
+    /* Rede socias */
+
+
+    footer .share svg {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+
+
+
+
+/* Tablet 900px */
+
+
+
+#home,
+#sobre {
+    scroll-margin-top: 10rem;
+    /* aumenta para compensar o header nesse breakpoint */
+}
+
+
+#endereco {
+    scroll-margin-top: .1rem;
+}
+
+
+
+/* Header */
+
+.menu li {
+    font-size: .8rem;
+}
+
+
+
+/* Sessão home */
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 900px) {
+    .home_container {
+        background-image: url(../imagens/home-img.jpg);
+        background-size: 60% 28%;
+        background-position: right bottom;
+        margin: 0 auto;
+
+    }
+
+
+    .title-home {
+        font-size: 2rem;
+        color: #ddd;
+    }
+
+
+
+    .paragraf {
+        font-size: .9rem;
+
+    }
+
+
+    /* Sessão sobre */
+
+    .title {
+        font-size: 1.5rem;
+        color: var(--btn);
+    }
+
+
+    .title span {
+        color: var(--link);
+    }
+
+
+
+    .row-sobre {
+        flex-direction: column-reverse;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+
+    .row-sobre img {
+
+        display: block;
+        margin: 0 auto;
+
+
+    }
+
+
+
+    /* Sessão menu */
+
+    .conteudo-card {
+        margin: .5rem;
+        border-radius: 7px;
+
+    }
+
+
+
+
+
+    /* Sessão avaliações */
+
+    .card_avaliacoes {
+        margin: .5rem;
+        border-radius: 7px;
+    }
+
+
+
+    /* Rede socias */
+
+    footer .share svg {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+}
+
+
+
+
+
+/* Laptop 1440px */
+
+
+
+/* Sessão home */
+
+@media(min-width: 901px) and (max-width: 1440px) {
+    .home_container {
+          background-image: url(../imagens/home-img.jpg);
+        background-size: contain;
+        background-position: left 50px bottom;
+
+    }
+
+
+    .title-home {
+        color: #ddd;
+    }
+
+
+
+
+    /* Sessão sobre */
+
+    .title {
+        font-size: 2.3rem;
+        color: var(--btn);
+
+    }
+
+
+    .title span {
+        color: var(--link);
+    }
+
+
+    /* Sessão avaliações */
+
+
+    .paragraf_client {
+        text-align: left;
+    }
+
+
+    /* Rede socias */
+
+
+    footer .share svg {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+
+
+
+}
