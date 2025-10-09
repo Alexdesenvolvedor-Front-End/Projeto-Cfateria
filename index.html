@@ -6,363 +6,329 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="descrição da minha pagina">
     <meta name="author" content="Alex Rodrigues Vitorino">
-    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Projeto cafeteria</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <a href="https://www.mercafe.com.br/" class="logo">
-                    <img src="imagens/logo.png" alt="informação café">
-                </a>
+    <div class="row">
 
-                <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#avaliacoes">Avaliações</a></li>
-                    <li><a href="#endereco">Endereços</a></li>
+        <header>
+            <nav>
+                <div class="container">
+                    <a href="https://www.mercafe.com.br/" class="logo">
+                        <img src="imagens/logo.png" alt="informação café">
+                    </a>
+
+                    <!-- Botão hambúrguer: só aparece no celular -->
+                    <button class="menu-toggle d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#painel">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <ul class="menu d-none d-lg-flex">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#avaliacoes">Avaliações</a></li>
+                        <li><a href="#endereco">Endereços</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+
+        <!-- Painel lateral -->
+        <div class="offcanvas offcanvas-start text-bg-secondary w-50" id="painel" tabindex="-1" data-bs-scroll="true"
+            data-bs-backdrop="static">
+            <div class="offcanvas-header">
+                <h5 class="title">Menu</h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#sobre" class="text-white text-decoration-none">Sobre</a></li>
+                    <li><a href="#menu" class="text-white text-decoration-none">Menu</a></li>
+                    <li><a href="#avaliacoes" class="text-white text-decoration-none">Avaliações</a></li>
+                    <li><a href="#endereco" class="text-white text-decoration-none">Endereços</a></li>
                 </ul>
-
-                <div class="icons">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-    <!-- Sessão home -->
-    <section class="home_container" id="home">
-
-        <div class="content">
-            <h3 class="title-home">Conte com o melhor café da região</h3>
-            <p class="paragraf">O café! É uma das bebidas mais populares e apreciadas em todo o mundo. Existem
-                muitas variedades
-                de café, cada uma com seu próprio sabor e características únicas.
-
-                Algumas pessoas gostam de café forte e intenso, enquanto outras preferem um café mais suave e
-                aromático. O café também pode ser preparado de muitas maneiras diferentes, como espresso,
-                cappuccino, latte, coado, entre outras.
-
-                Além disso, o café tem uma rica história e cultura, com muitas tradições e rituais associados a
-                ele. Em alguns países, o café é uma parte importante da vida social e é frequentemente servido
-                em reuniões e encontros.</p>
-            <a href="https://www.mercafe.com.br/" class="btn" target="_blank">Pegue já o seu</a>
-        </div>
-
-    </section>
-
-
-    <!-- Sessão sobre -->
-    <section id="sobre">
-        <h2 class="title">Sobre <span>Nós</span></h2>
-
-        <div class="row-sobre">
-            <div>
-                <img src="imagens/about-img.jpg" alt="café espumando">
-            </div>
-
-            <div class="conteudo-texto">
-                <h3>O que faz nosso café</h3>
-                <p class="paragraf">O "nosso café" refere-se geralmente a um café específico e de qualidade,
-                    produzido com cuidado para oferecer um sabor, aroma e corpo únicos, muitas vezes com o objetivo
-                    de proporcionar uma bebida excelente e que seja apreciada pelo consumidor. Também pode se
-                    referir a um programa ou marca específica focada em otimizar a produção e qualidade do café,
-                    como o Programa NossoCafé Yara.
-                </p>
-                <a href="#" class="btn">Saiba Mais</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sessão menu -->
-
-    <section class="box" id="menu">
-        <h2 class="title">Nosso <span>menu</span></h2>
-
-        <div class="row-menu">
-            <div class="conteudo-card">
-                <img src="imagens/imagem1.png" alt="item1">
-                <h4>café Coado</h4>
-                <div class="price">
-                    R$15,99 <span>19,00</span>
-                </div>
-                <a href="#" class="btn">Adicione ao seu carrinho</a>
-            </div>
-
-            <div class="conteudo-card">
-                <img src="imagens/imagem2.png" alt="item2">
-                <h4>café Arábica</h4>
-                <div class="price">
-                    R$18,99 <span>23,00</span>
-                </div>
-                <a href="#" class="btn">Adicione ao seu carrinho</a>
-            </div>
-
-            <div class="conteudo-card">
-                <img src="imagens/imagem3.png" alt="item3">
-                <h4>café Bourbon</h4>
-                <div class="price">
-                    R$13,00 <span>19,00</span>
-                </div>
-                <a href="#" class="btn">Adicione ao seu carrinho</a>
-            </div>
-
-            <div class="conteudo-card">
-                <img src="imagens/imagem4.png" alt="item4">
-                <h4>café Catuaí</h4>
-                <div class="price">
-                    R$12,99 <span>19,00</span>
-                </div>
-                <a href="#" class="btn">Adicione ao seu carrinho</a>
-            </div>
-
-            <div class="conteudo-card">
-                <img src="imagens/imagem5.png" alt="item5">
-                <h4>café Kona Coffe</h4>
-                <div class="price">
-                    R$19,99 <span>26,00</span>
-                </div>
-                <a href="#" class="btn">Adicione ao seu carrinho</a>
-            </div>
-
-            <div class="conteudo-card">
-                <img src="imagens/imagem6.png" alt="item6">
-                <h4>café Geisha</h4>
-                <div class="price">
-                    R$19,99 <span>25,00</span>
-                </div>
-                <a href="#" class="btn">Adicione ao seu carrinho</a>
-
             </div>
         </div>
 
-    </section>
 
-    <!-- Sessao avaliações -->
+        <!-- ============================== HOME ============================== -->
+        <section class="section-home py-4 py-md-5 mt-3 mt-md-5" id="home">
+            <div class="container py-5-mt-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 order1">
+                        <h3 class="mb-3 title-home">Conte com o melhor café da região...</h3>
+                        <p class="paragraf">O café! É uma das bebidas mais populares e apreciadas em todo o mundo.
+                            Existem
+                            muitas variedades
+                            de café, cada uma com seu próprio sabor e características únicas.
 
-    <section id="avaliacoes">
-        <h2 class="title">Nosso <span>cliente</span></h2>
+                            Algumas pessoas gostam de café forte e intenso, enquanto outras preferem um café mais suave
+                            e
+                            aromático. O café também pode ser preparado de muitas maneiras diferentes, como espresso,
+                            cappuccino, latte, coado, entre outras.
 
-        <div class="row-avaliacoes">
-            <div class="card_avaliacoes">
-                <img src="imagens/quote-img.png" class="decoracao" alt="decoracao">
-                <p class="paragraf_client">Cada xícara tem um pouco de história e muito amor.
-                    Uma experiência sensorial que se desdobra a cada gole, revelando camadas de sabor e aroma
-                </p>
-                <img src="imagens/cliente2.png" alt="cliente1" class="user">
-                <h3>Sheila</h3>
-
-                <div class="box-stars">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
-
+                            Além disso, o café tem uma rica história e cultura, com muitas tradições e rituais
+                            associados a
+                            ele. Em alguns países, o café é uma parte importante da vida social e é frequentemente
+                            servido
+                            em reuniões e encontros.</p>
+                    </div>
+                    <div class="col-12 col-md-6 order2">
+                        <img src="imagens/home-img.jpg" class="img-fluid" alt="café">
+                    </div>
                 </div>
-
             </div>
-
-            <div class="card_avaliacoes">
-                <img src="imagens/quote-img.png" class="decoracao" alt="decoracao">
-                <p class="paragraf_client">Um café que desperta os sentidos com seu aroma sedutor e tentador.
-                    Aquele momento de prazer que quem ama café sente depois de tomar um café.</p>
-                <img src="imagens/cliente3.png" alt="cliente1" class="user">
-                <h3>Alex</h3>
-
-                <div class="box-stars">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
+        </section>
 
 
+        <!-- ============================== SOBRE ============================== -->
+
+        <section id="sobre" class="py-4 py-md-5 mt-3 mt-md-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <h2 class="title text-center">Sobre <span>Nós</span></h2>
+                    <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-start conteudo-texto">
+                        <h3 class="title-home">O que faz nosso café</h3>
+                        <p class="paragraf">O "nosso café" refere-se geralmente a um café específico e de qualidade,
+                            produzido com cuidado para oferecer um sabor, aroma e corpo únicos, muitas vezes com o
+                            objetivo
+                            de proporcionar uma bebida excelente e que seja apreciada pelo consumidor. Também pode se
+                            referir a um programa ou marca específica focada em otimizar a produção e qualidade do café,
+                            como o Programa NossoCafé Yara.
+                        </p>
+                        <a href="https://www.mokaclube.com.br/blogs/news/cafe-de-qualidade?srsltid=AfmBOooY-rRz6sEzIz63-hIQMbfvmuvtTfFGsfdmz_-_LKrEZOgzPr9y"
+                            class="button" target="_blank">Saiba Mais</a>
+                    </div>
+
+                    <div class="col-12 col-md-6 order-2 order-md-1 text-center">
+                        <img src="imagens/about-img.jpg" class="img-fluid" alt="café espumando">
+                    </div>
                 </div>
-
             </div>
+        </section>
 
-            <div class="card_avaliacoes">
-                <img src="imagens/quote-img.png" class="decoracao" alt="decoracao">
-                <p class="paragraf_client">O motivo do meu sorriso pela manhã tem um gosto amargo, um aroma
-                    inebriante
-                    e
-                    aquece os meus lábios trazendo doçura para o meu coração.</p>
-                <img src="imagens/cliente1.png" alt="cliente1" class="user">
-                <h3>Patrick</h3>
 
-                <div class="box-stars">
+        <!-- ============================== MENU ============================== -->
+        <section id="menu">
+            <div class="container my-5">
+                <div class="row justify-content-center ">
+                    <h2 class="title text-center">Nosso <span>menu</span></h2>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xxl-2 mb-4">
+                        <div class="card h-100 text-center p-3 ">
+                            <img src="imagens/imagem1.png" alt="Imagem de café" class="img-fluid mx-auto d-block mb-5">
+                            <h4>café Coado</h4>
+                            <div class="price">
+                                R$15,99 <span>19,00</span>
+                            </div>
+                            <a href="#" class="button">Carrinho</a>
+                        </div>
+                    </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xxl-2 mb-4">
+                        <div class="card h-100 text-center p-3">
+                            <img src="imagens/imagem2.png" alt="item2" class="img-fluid mx-auto d-block mb-5">
+                            <h4>café Arábica</h4>
+                            <div class="price">
+                                R$18,99 <span>23,00</span>
+                            </div>
+                            <a href="#" class="button">Carrinho</a>
+                        </div>
+                    </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xxl-2 mb-4">
+                        <div class="card h-100  text-center p-3">
+                            <img src="imagens/imagem3.png" alt="item3" class="img-fluid mx-auto d-block mb-5">
+                            <h4>café Bourbon</h4>
+                            <div class="price">
+                                R$13,00 <span>19,00</span>
+                            </div>
+                            <a href="#" class="button">Carrinho</a>
+                        </div>
+                    </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-star-icon lucide-star">
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-                    </svg>
+
+
+                    <!-- Card 4 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xxl-2 mb-4">
+                        <div class="card h-100  text-center p-3">
+                            <img src="imagens/imagem4.png" alt="item4" class="img-fluid mx-auto d-block mb-5">
+                            <h4>café Catuaí</h4>
+                            <div class="price">
+                                R$12,99 <span>19,00</span>
+                            </div>
+                            <a href="#" class="button">Carrinho</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 5  -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xxl-2 mb-4">
+                        <div class="card h-100  text-center p-3">
+                            <img src="imagens/imagem5.png" alt="item5" class="img-fluid mx-auto d-block mb-5">
+                            <h4>café Kona</h4>
+                            <div class="price">
+                                R$19,99 <span>26,00</span>
+                            </div>
+                            <a href="#" class="button">Carrinho</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 6 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xxl-2 mb-4">
+                        <div class="card h-100  text-center p-3">
+                            <img src="imagens/imagem6.png" alt="item6" class="img-fluid mx-auto d-block mb-5">
+                            <h4>café Geisha</h4>
+                            <div class="price">
+                                R$19,99 <span>25,00</span>
+                            </div>
+                            <a href="#" class="button">Carrinho</a>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-        </div>
+        </section>
 
-    </section>
-
-    <!-- Endereço -->
-
-    <section id="endereco">
-        <h2 class="title">Nosso <span>endereço</span></h2>
-
-        <div class="google-maps">
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29420.875651073668!2d-43.05684697129796!3d-22.816930776357854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983e9a0e6236f%3A0xbb2b7672e84a9a29!2zTGUgQ2Fmw6k!5e0!3m2!1spt-BR!2sbr!4v1757366254908!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-
-        <!-- Rodapé -->
+        <!-- ============================== Avaliações ============================== -->
 
 
 
+        <section id="avaliacoes">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <h2 class="title text-center">Nossos <span>clientes</span></h2>
 
-        <footer>
-            <div class="share">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
-                    <path fill="#3F51B5"
-                        d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
-                    </path>
-                    <path fill="#FFF"
-                        d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z">
-                    </path>
-                </svg>
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-6 col-md col-lg col-xxl mb-4">
+                        <div class="card h-100 card h-100 text-center p-3 mx-auto">
+                            <img src="imagens/quote-img.png" class="decoracao img-fluid" alt="decoracao">
+                            <p class="paragraf_client">Cada xícara tem um pouco de história e muito amor.
+                                Uma experiência sensorial que se desdobra a cada gole, revelando camadas de sabor e
+                                aroma
+                            </p>
+                            <img src="imagens/cliente1.png" alt="cliente1" class="user img-fluid">
+                            <h3>Alex</h3>
+                            <div class="box-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
-                    <path fill="#f55376"
-                        d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z">
-                    </path>
-                    <path fill="#fac8d5"
-                        d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
-                    </path>
-                    <circle cx="31.5" cy="16.5" r="1.5" fill="#fac8d5"></circle>
-                    <path fill="#fac8d5"
-                        d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12 C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18 z">
-                    </path>
-                </svg>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-6 col-md col-lg col-xxl mb-4">
+                        <div class="card h-100 card h-100 text-center p-3 mx-auto">
+                            <img src="imagens/quote-img.png" class="decoracao img-fluid" alt="decoracao">
+                            <p class="paragraf_client">Um café que desperta os sentidos com seu aroma sedutor e
+                                tentador.
+                                Aquele momento de prazer que quem ama café sente depois de tomar um café.
 
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
-                    <path fill="#f44336"
-                        d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z">
-                    </path>
-                    <path fill="#fff"
-                        d="M36.499,25.498c-0.276-0.983-1.089-1.758-2.122-2.021C32.506,23,24,23,24,23s-8.506,0-10.377,0.478 c-1.032,0.263-1.846,1.037-2.122,2.021C11,27.281,11,31,11,31s0,3.719,0.501,5.502c0.276,0.983,1.089,1.758,2.122,2.021 C15.494,39,24,39,24,39s8.505,0,10.377-0.478c1.032-0.263,1.846-1.037,2.122-2.021C37,34.719,37,31,37,31S37,27.281,36.499,25.498z">
-                    </path>
-                    <path fill="#f44336"
-                        d="M16.333 37L14.667 37 14.667 26.655 13 26.655 13 25 18 25 18 26.655 16.333 26.655zM23 37h-1.5l-.167-1.132C20.675 36.579 19.892 37 19.283 37c-.533 0-.908-.231-1.092-.653C18.083 36.083 18 35.687 18 35.092V27.5h1.667v7.757c.042.24.217.33.433.33.333 0 .867-.363 1.233-.843V27.5H23V37zM35 32.663v-2.701c0-.777-.192-1.338-.533-1.702-.458-.496-1.117-.76-1.942-.76-.842 0-1.492.264-1.967.76C30.2 28.623 30 29.218 30 29.995v4.593c0 .768.225 1.313.575 1.669C31.05 36.752 31.7 37 32.567 37c.858 0 1.533-.256 1.983-.785.2-.231.333-.496.392-.785C34.95 35.298 35 34.943 35 34.522h-1.667v.661c0 .38-.375.694-.833.694s-.833-.314-.833-.694v-2.52H35zM31.667 29.392c0-.388.375-.694.833-.694s.833.306.833.694v2.123h-1.667V29.392zM28.783 28.492c-.208-.646-.717-1.001-1.35-1.01-.808-.008-1.142.414-1.767 1.142V25H24v12h1.5l.167-1.034C26.192 36.611 26.875 37 27.433 37c.633 0 1.175-.331 1.383-.977.1-.348.175-.67.183-1.399V30.28C29 29.461 28.892 28.84 28.783 28.492zM27.333 34.41c0 .869-.2 1.167-.65 1.167-.258 0-.75-.174-1.017-.439v-5.686c.267-.265.758-.521 1.017-.521.45 0 .65.273.65 1.142V34.41z">
-                    </path>
-                    <path fill="#fff"
-                        d="M15 9l1.835.001 1.187 5.712.115 0 1.128-5.711 1.856-.001L19 16.893V21h-1.823l-.003-3.885L15 9zM21.139 14.082c0-.672.219-1.209.657-1.606.437-.399 1.024-.6 1.764-.601.675 0 1.225.209 1.655.63.429.418.645.96.645 1.622l.003 4.485c0 .742-.209 1.326-.63 1.752C24.812 20.788 24.234 21 23.493 21c-.714 0-1.281-.221-1.712-.656-.428-.435-.64-1.023-.641-1.76l-.003-4.503L21.139 14.082 21.139 14.082zM22.815 18.746c0 .236.057.423.178.553.115.128.279.193.495.193.221 0 .394-.066.524-.201.129-.129.196-.314.196-.547l-.003-4.731c0-.188-.069-.342-.201-.459-.131-.116-.305-.175-.519-.175-.199 0-.361.06-.486.176-.124.117-.186.271-.186.459L22.815 18.746zM32 12v9h-1.425l-.227-1.1c-.305.358-.622.63-.953.815C29.067 20.901 28.747 21 28.437 21c-.384 0-.671-.132-.866-.394-.195-.259-.291-.65-.291-1.174L27.276 12h1.653l.004 6.825c0 .204.036.355.106.449.066.09.183.14.335.14.124 0 .278-.062.46-.186.188-.122.358-.281.512-.471L30.344 12 32 12z">
-                    </path>
-                </svg>
+                            </p>
+                            <img src="imagens/cliente2.png" alt="cliente1" class="user img-fluid">
+                            <h3>Sheila</h3>
+                            <div class="box-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-md col-lg col-xxl mb-4">
+                        <div class="card h-100 card h-100 text-center p-3 mx-auto">
+                            <img src="imagens/quote-img.png" class="decoracao img-fluid" alt="decoracao">
+                            <p class="paragraf_client">O motivo do meu sorriso pela manhã tem um gosto amargo, um aroma
+                                inebriante, eu amo o noso café.
+
+                            </p>
+                            <img src="imagens/cliente3.png" alt="cliente1" class="user img-fluid">
+                            <h3>Patrick</h3>
+                            <div class="box-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
-
-    </section>
+        </section>
 
 
 
+
+        <!-- ============================== Endereço ============================== -->
+
+
+        <section id="endereco">
+            <div class="container">
+                <div class="row py-5">
+                    <h2 class="title text-center">Nosso <span>endereço</span></h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14693.338679449476!2d-43.19548173404198!3d-22.974717717315126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scafeteria%20em%20copacabana%20rj!5e0!3m2!1spt-BR!2sbr!4v1760044759688!5m2!1spt-BR!2sbr"
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <footer>
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="rede-socias">
+                                    <i class="bi bi-linkedin" data-tooltip="Linkedin"></i>
+                                    <i class="bi bi-instagram" data-tooltip="Instagram"></i>
+                                    <i class="bi bi-whatsapp" data-tooltip="Whatsapp"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>
