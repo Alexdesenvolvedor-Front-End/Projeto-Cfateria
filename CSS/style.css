@@ -176,12 +176,10 @@ header {
 
 .paragraf {
     color: #ccc;
-    /* letter-spacing: 1px; */
     font-weight: 100;
     font-size: 1.1rem;
-    line-height: 1.7rem;
-    text-align: center;
-    text-align: justify;
+   
+
 
 
 }
