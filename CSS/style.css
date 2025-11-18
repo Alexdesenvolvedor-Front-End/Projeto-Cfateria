@@ -7,8 +7,30 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, sans-serif;
     outline: none;
+    font-family: "Lato", sans-serif;
+
 }
 
 
 
-/* ==================== HTML ==================== */
+/* IMAGEM DE FUNDO DO PROJETO */
+
+
+.home-section{
+    background-image: url(../imagens/home-img.jpg);
+    height: 300px;
+    background-size: contain;
+    background-position: center center;
+}
+
+
+
+
+.home-section img{
+    width: 100%;
+    display: block;
+}
+
+
+
+

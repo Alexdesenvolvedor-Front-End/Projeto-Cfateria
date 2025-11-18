@@ -7,6 +7,12 @@
     <meta name="description" content="descrição da minha pagina">
     <meta name="author" content="Alex Rodrigues Vitorino">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="imagens/" type="image/x-icon">
 
@@ -22,49 +28,76 @@
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Cafeteria solar</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-success" type="submit">Search</button>
-                    </form>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+
+                <!-- Botão Menu -->
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#painel">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <ul class="menu d-none d-lg-flex">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#endereco">Endereços</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Painel lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-start text-bg-white w-75" id="painel" tabindex="-1" data-bs-scroll="true"
+        data-bs-backdrop="static">
+
+        <!-- Cabeçalho do painel -->
+        <div class="offcanvas-header">
+            <!-- Botão para fechar -->
+            <button class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <!-- Corpo do painel -->
+        <div class="offcanvas-body">
+            <img src="imagens/logo.png" alt="logo marca da padaria">
+            <ul class="list-unstyled">
+                <li><a href="#home" class="text-dark text-decoration-none">Home</a></li>
+                <li><a href="#sobre" class="text-dark text-decoration-none">Sobre</a></li>
+                <li><a href="#menu" class="text-dark text-decoration-none">Menu</a></li>
+                <li><a href="#avaliacoes" class="text-dark text-decoration-none">Avaliações</a></li>
+                <li><a href="#endereco" class="text-dark text-decoration-none">Endereços</a></li>
+            </ul>
+
+
+            <div class="container form-input py-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 text-center">
+                        <form class="news-form">
+                            <label>Receba novidades</label>
+
+                            <div class="input-wrapper">
+                                <input type="email" class="form-control" placeholder="Digite o seu email" required>
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
+
+
+
+
         </div>
-    </nav>
+    </div>
 
 
-
-
-
-
-
-
-
-
+    <section class="home-section">
+        <!-- logo img da padaria -->
+    </section>
 
 
 
