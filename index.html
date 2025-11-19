@@ -52,34 +52,33 @@
     </header>
 
     <!-- Painel lateral (offcanvas) -->
-    <div class="offcanvas offcanvas-start text-bg-white w-75" id="painel" tabindex="-1" data-bs-scroll="true"
+    <div class="offcanvas offcanvas-start w-75" id="painel" tabindex="-1" data-bs-scroll="true"
         data-bs-backdrop="static">
 
         <!-- Cabeçalho do painel -->
         <div class="offcanvas-header">
             <!-- Botão para fechar -->
-            <button class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"></button>
+            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
         </div>
 
         <!-- Corpo do painel -->
         <div class="offcanvas-body">
-            <img src="imagens/logo.png" alt="logo marca da padaria">
+            <img src="imagens/logo.png" alt="logo marca da padaria" class="logo">
             <ul class="list-unstyled">
-                <li><a href="#home" class="text-dark text-decoration-none">Home</a></li>
-                <li><a href="#sobre" class="text-dark text-decoration-none">Sobre</a></li>
-                <li><a href="#menu" class="text-dark text-decoration-none">Menu</a></li>
-                <li><a href="#avaliacoes" class="text-dark text-decoration-none">Avaliações</a></li>
-                <li><a href="#endereco" class="text-dark text-decoration-none">Endereços</a></li>
+                <li><a href="home" class="text-decoration-none">Home</a></li>
+                <li><a href="sobre" class="text-decoration-none">Sobre</a></li>
+                <li><a href="menu" class="text-decoration-none">Menu</a></li>
+                <li><a href="avaliacoes" class="text-decoration-none">Avaliações</a></li>
+                <li><a href="endereco" class="text-decoration-none">Endereços</a></li>
             </ul>
-
 
             <div class="container form-input py-5">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 text-center">
-                        <form class="news-form">
+                        <form>
                             <label>Receba novidades</label>
 
-                            <div class="input-wrapper">
+                            <div>
                                 <input type="email" class="form-control" placeholder="Digite o seu email" required>
                                 <button type="submit">Enviar</button>
                             </div>
@@ -87,16 +86,22 @@
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
     </div>
 
 
     <section class="home-section">
-        <!-- logo img da padaria -->
+        <!-- Img principal do projeto -->
+        <img src="imagens/home-img.jpg" alt="imagem principal do café">
+        <div class="text">
+            <p> Conte com o melhor café da região, grãos selecionados e bebidas feitas com paixão. O café! É uma das
+                bebidas mais populares e apreciadas em
+                todo
+                o mundo.
+                Existem
+                muitas variedades
+                de café, cada uma com seu próprio sabor e características únicas.</p>
+        </div>
     </section>
 
 
