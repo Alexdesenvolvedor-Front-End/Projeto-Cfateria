@@ -1,75 +1,87 @@
 /* ==================== RESET ==================== */
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, sans-serif;
     font-family: "Lato", sans-serif;
-
 }
 
 
-
-
+/* ==================== GLOBAL ==================== */
 body {
-    background: #000000;
+    background-color: #000000;
 }
 
 
 
 
-.home-hero img {
-    display: block;
-    width: 100%;
+section {
+    padding: 5em 0;
 }
 
 
 
+
+
+
+/* ==================== HERO ==================== */
 .home-hero {
+    background-image: url(../imagens/home-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
     position: relative;
-
 }
 
-
-
+/* Texto dentro do hero */
 .text h3 {
     position: absolute;
     top: 10px;
     color: #f2f2f2;
-    padding: 1em 1em;
+    padding: 1em;
     font-weight: 500;
     letter-spacing: 1px;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.45);
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 30px;
+}
 
+/* Botão dentro do hero */
+.btn-hero {
+    display: inline-block;
+    background-color: #f5c518;
+    margin-top: 12em;
+    padding: .3em 1.2em;
+    margin-left: 2em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 1px;
+    text-transform: capitalize;
+}
+
+.btn-hero:active {
+    transform: scale(0.97);
 }
 
 
 
+/* ==================== OFFCANVAS ==================== */
+.offcanvas {
+    background-color: #333333;
+}
+
+/* Imagem dentro do offcanvas */
 .offcanvas-body img {
     max-width: 20%;
     margin-top: -1em;
-
 }
 
-
-
-
+/* Lista do menu */
 .list-unstyled {
     padding-top: 1em;
 }
-
-
-
-
-.offcanvas {
-    background: #333333;
-}
-
-
-
-
 
 .list-unstyled li a {
     display: inline-block;
@@ -77,89 +89,61 @@ body {
     color: #fff;
     border-bottom: 1px solid #ccc;
     font-weight: 500;
-
 }
 
 
 
-
+/* ==================== FORMULÁRIOS ==================== */
 form label {
     color: #fff;
     font-size: 1.2em;
     font-weight: 700;
-
 }
-
 
 .form-control {
     margin-top: .3em;
-    background: #dce0e6;
+    background-color: #dce0e6;
 }
 
-
-
-
-
 .form-control:focus {
-    background: #e6e6e6;
+    background-color: #e6e6e6;
     border: none;
     box-shadow: none;
     outline: none;
-
-
-
 }
-
-
 
 .form-control::placeholder {
     color: #111;
-
 }
 
-
-
-
-.input-wrap button {
-    padding: .3em .8em;
-    border-radius: 3px;
-    background: #4d88ff;
-    color: #ffffff;
-    border: none;
-}
-
-
-
-
-
-
+/* Input com botão interno */
 .input-wrap {
     position: relative;
 }
 
-
-
 .input-wrap button {
+    padding: .3em .8em;
+    border-radius: 3px;
+    background-color: #4d88ff;
+    color: #ffffff;
+    border: none;
     position: absolute;
     top: 2px;
     right: 4px;
-
 }
-
-
 
 .input-wrap button:active {
     transform: scale(0.97);
 }
 
 
+
+/* ==================== NAVBAR ==================== */
 .navbar-toggler {
-    background: #f2f2f2;
+    background-color: #f2f2f2;
     font-size: .8em;
     margin-top: 1em;
 }
-
-
 
 .navbar-toggler:focus {
     border: none;
@@ -168,19 +152,56 @@ form label {
 
 
 
-.btn-hero {
-    background-color: #f5c518;
-    display: inline-block;
-    padding: .3em 1.2em;
-    margin-left: 2em;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    border-radius: 1px;
+.title {
+    text-align: center;
+    color: #ffb86c;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 0 0 2px #ffffff, 1px 1px 3px rgba(0, 0, 0, 0.6);
+
 }
 
 
 
-.btn-hero:active{
+.col-md-6 h3 {
+    color: #ffffff;
+    margin-top: 1em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+.text-background {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+}
+
+
+.text-background p {
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.btn-container {
+    padding: .3em 1.2em;
+    background-color: #f5c518;
+    border: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+
+
+.btn-container {
     transform: scale(0.97);
 }
+
+
