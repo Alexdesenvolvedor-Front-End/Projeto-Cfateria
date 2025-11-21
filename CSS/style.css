@@ -41,6 +41,7 @@
 .offcanvas-body img {
     max-width: 20%;
     margin-top: -1em;
+   
 }
 
 
@@ -54,8 +55,8 @@
 
 
 .offcanvas {
-    background: #7a8288;   
-}
+    /* background: #7a8288; */
+    background: #333333;
 
 /* Na sexta feira eu vou mexer nesse offcanvas , quero troca a cor */
 
@@ -67,8 +68,3 @@
     font-weight: 500;
 
 }
-
-
-
-
-
