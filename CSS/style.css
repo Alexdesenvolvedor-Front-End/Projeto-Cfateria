@@ -14,6 +14,13 @@
 
 
 
+body {
+    background: #000000;
+}
+
+
+
+
 .home-section img {
     display: block;
     width: 100%;
@@ -41,7 +48,7 @@
 .offcanvas-body img {
     max-width: 20%;
     margin-top: -1em;
-   
+
 }
 
 
@@ -55,10 +62,12 @@
 
 
 .offcanvas {
-    /* background: #7a8288; */
     background: #333333;
+}
 
-/* Na sexta feira eu vou mexer nesse offcanvas , quero troca a cor */
+
+
+
 
 .list-unstyled li a {
     display: inline-block;
@@ -67,4 +76,87 @@
     border-bottom: 1px solid #ccc;
     font-weight: 500;
 
+}
+
+
+
+
+form label {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+
+}
+
+
+.form-control {
+    margin-top: .3em;
+    background: #dce0e6;
+}
+
+
+
+
+
+.form-control:focus {
+    background: #e6e6e6;
+    border: none;
+    box-shadow: none;
+    outline: none;
+
+
+
+}
+
+
+
+.form-control::placeholder {
+    color: #111;
+
+}
+
+
+
+
+.input-wrap button {
+    padding: .3em .8em;
+    border-radius: 3px;
+    background: #4d88ff;
+    color: #ffffff;
+    border: none;
+}
+
+
+
+.input-wrap:hover {
+    background: #3c7ae6;
+}
+
+
+
+
+.input-wrap {
+    position: relative;
+}
+
+
+
+.input-wrap button {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+
+}
+
+
+.navbar-toggler {
+    background: #f2f2f2;
+    font-size: .9em;
+}
+
+
+
+.navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
 }
