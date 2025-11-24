@@ -40,11 +40,11 @@
                 </button>
 
                 <ul class="menu d-none d-lg-flex">
-                    <li><a href="home">Home</a></li>
+                    <li><a href="cardapio">Cardápio</a></li>
                     <li><a href="sobre">Sobre</a></li>
-                    <li><a href="menu">Menu</a></li>
-                    <li><a href="avaliacoes">Avaliações</a></li>
-                    <li><a href="endereco">Endereços</a></li>
+                    <li><a href="playlist">Playlist</a></li>
+                    <li><a href="lojas">Lojas</a></li>
+                    <li><a href="contato">Contato</a></li>
                 </ul>
 
             </div>
@@ -52,7 +52,7 @@
     </header>
 
     <!-- Painel lateral (offcanvas) -->
-    <div class="offcanvas offcanvas-start w-75" id="painel" tabindex="-1" data-bs-scroll="true"
+    <div class="offcanvas offcanvas-start w-100" id="painel" tabindex="-1" data-bs-scroll="true"
         data-bs-backdrop="static">
 
         <!-- Cabeçalho do painel -->
@@ -64,25 +64,31 @@
 
         <!-- Corpo do painel -->
         <div class="offcanvas-body">
-            <img src="imagens/logo.png" alt="logo marca da padaria" class="logo">
             <ul class="list-unstyled">
-                <li><a href="home" class="text-decoration-none">Home</a></li>
-                <li><a href="sobre" class="text-decoration-none">Sobre</a></li>
-                <li><a href="menu" class="text-decoration-none">Menu</a></li>
-                <li><a href="avaliacoes" class="text-decoration-none">Avaliações</a></li>
-                <li><a href="endereco" class="text-decoration-none">Endereços</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Menu</a></li>
             </ul>
 
             <div class="container form-input py-5">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-8 text-center">
-                        <form>
-                            <label>Receba novidades</label>
+                    <div class="col-12 col-md-8">
+                        <form class="d-flex flex-column">
+                            <h2 class="text-center contact">Contato</h2>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
 
-                            <div class="input-wrap">
-                                <input type="email" class="form-control" placeholder="Digite o seu email" required>
-                                <button type="submit">Enviar</button>
-                            </div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="amail" required placeholder="Digite um e-mail valido">
+
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" required>
+
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                            <button type="submit" class="button">Enviar</button>
+
+
                         </form>
                     </div>
                 </div>
@@ -93,9 +99,7 @@
 
     <main class="home-hero">
         <div class="text">
-            <h3> Conte com o melhor café da região, grãos selecionados e bebidas feitas com paixão. O café! É uma das
-                bebidas mais populares e apreciadas em
-                todo mundo.</h3>
+
             <a href="#" class="btn-hero">Pegue o seu agora</a>
         </div>
     </main>
@@ -110,12 +114,7 @@
             <div class="col-md-6">
                 <div class="text-background">
                     <h3>O que faz o nosso café</h3>
-                    <p>O "nosso café" refere-se geralmente a um café específico e de qualidade,
-                        produzido com cuidado para oferecer um sabor, aroma e corpo únicos, muitas vezes com o
-                        objetivo
-                        de proporcionar uma bebida excelente e que seja apreciada pelo consumidor. Também pode se
-                        referir a um programa ou marca específica focada em otimizar a produção e qualidade do café,
-                        como o Programa NossoCafé Yara.</p>
+
                     <a href="#" class="btn-container">Saiba mais</a>
                 </div>
 
@@ -124,7 +123,7 @@
     </section>
 
     <!-- Menu -->
-   
+
 
 
 
