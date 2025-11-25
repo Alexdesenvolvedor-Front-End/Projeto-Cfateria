@@ -137,7 +137,7 @@ body {
 
 
 section {
-    padding-top: 6em;
+    padding-top: 4em;
 }
 
 
@@ -162,7 +162,7 @@ section {
 .title {
     color: #ffffff;
     font-weight: 600;
-    font-size: 1.7em;
+    font-size: 1.4em;
     margin-top: .9em;
     text-transform: uppercase;
 }
