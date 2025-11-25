@@ -137,7 +137,16 @@ body {
 
 
 section {
-    margin-top: 12em;
+    padding-top: 7em;
+}
+
+
+
+.text h1 {
+    color: #ffffff;
+    margin-left: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 
@@ -163,6 +172,7 @@ section {
     color: #3A3A3A;
     margin-top: 1em;
     font-weight: 700;
+
 }
 
 
@@ -172,23 +182,61 @@ section {
     color: #ddd;
     font-size: .9em;
     letter-spacing: 1px;
+    font-style: italic;
 }
 
 
 
 
-.card {
+.menu-card {
     padding: 1em;
     text-align: center;
-    border: none;
+    background-color: #f5f5f5;
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+
+
+
 }
 
 
 
 
 
-.card img {
-    width: 100%;
+.menu-card img {
+    width: 50%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 2em;
+
+}
+
+
+
+.saiba-btn {
+    padding: .5em 2.3em;
+    background-color: #DE8116;
+    display: inline-block;
+    border-radius: 2px;
+    color: #fff;
+    border: none;
+    font-size: .8em;
+    transition: transform .2s ease;
+}
+
+
+.saiba-btn:active {
+    transform: scale(0.95);
+}
+
+
+
+
+.name {
+    color: #3e2723;
+    margin-top: 1em;
+    font-size: .8em;
+    font-weight: 500;
 }
