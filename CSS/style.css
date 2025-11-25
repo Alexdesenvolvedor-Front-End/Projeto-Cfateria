@@ -24,7 +24,8 @@
 
 .list-unstyled a {
     display: inline-block;
-    margin: .5em 0;
+    padding: .5em 0;
+    margin-left: .9em;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -35,6 +36,7 @@
 
 .offcanvas {
     background-color: var(--cor--painel);
+    z-index: 1050;
 }
 
 
@@ -87,12 +89,13 @@ form label {
 form input,
 textarea {
     background-color: transparent;
+    margin-bottom: 1.2em;
     border: none;
     outline: none;
     box-shadow: none;
     border-bottom: 1px solid #5A5A5A;
-    margin-bottom: 1em;
     color: #ddd;
+
 }
 
 
@@ -123,79 +126,48 @@ textarea::placeholder {
 
 body {
     background-color: #2b2b2b;
-}
-
-
-
-
-
-.main-hero {
     background-image: url("https://static.wixstatic.com/media/nsplsh_5468315376372d31344c38~mv2.jpg/v1/fill/w_1897,h_841,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_5468315376372d31344c38~mv2.jpg");
-    height: 250px;
-    background-repeat: no-repeat;
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: top center;
 
-
 }
 
 
 
 
-.text h1 {
-    text-align: center;
-    padding-top: .4em;
-    color: #ffffff;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    font-weight: 500;
+section{
+    margin-top: 12em;
 }
 
 
-
-/* SOBRE */
-
-
-.title {
-    color: #ffffff;
-    padding: 1em 0;
-    font-size: 1.8em;
-    font-weight: 600;
-
-}
 
 
 .text-background {
     background-color: var(--cor--primary);
-    border-radius: 3px;
-    text-align: center;
+ 
 }
 
 
 
-.text-background img {
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-
-}
-
-
-.text-background h4 {
-    color: #F2F2F2;
-    margin-top: 1em;
-    font-size: 1.8em;
-    text-align: left;
-    margin-left: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-
-.text-background p {
+.title{
     color: #ffffff;
+    font-weight: 600;
+}
+
+
+
+.text-background h4{
+    color: #3A3A3A;
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+
+
+
+.text-background p{
+    color: #ddd;
     font-size: .8em;
-    text-align: left;
-    width: 310px;
-    margin-left: 1.3em;
+    letter-spacing: 1px;
 }
