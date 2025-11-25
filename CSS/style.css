@@ -136,7 +136,7 @@ body {
 
 
 
-section{
+section {
     margin-top: 12em;
 }
 
@@ -145,19 +145,21 @@ section{
 
 .text-background {
     background-color: var(--cor--primary);
- 
+
 }
 
 
 
-.title{
+.title {
     color: #ffffff;
     font-weight: 600;
+    font-size: 1.8em;
+    margin-top: .9em;
 }
 
 
 
-.text-background h4{
+.text-background h4 {
     color: #3A3A3A;
     margin-top: 1em;
     font-weight: 700;
@@ -166,8 +168,27 @@ section{
 
 
 
-.text-background p{
+.text-background p {
     color: #ddd;
-    font-size: .8em;
+    font-size: .9em;
     letter-spacing: 1px;
+}
+
+
+
+
+.card {
+    padding: 1em;
+    text-align: center;
+    border: none;
+}
+
+
+
+
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
