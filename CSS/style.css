@@ -279,3 +279,12 @@ span {
     margin-top: .5em;
 
 }
+
+
+
+
+.foto-padaria img{
+    max-width: 100%;
+    object-fit: cover;
+  
+}
