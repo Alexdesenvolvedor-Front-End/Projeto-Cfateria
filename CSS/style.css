@@ -284,20 +284,76 @@ span {
 
 
 
-.foto-padaria img{
+.foto-padaria img {
     max-width: 100%;
     object-fit: cover;
-  
+
 }
 
 
 
 
 
-.paes-card img{
-   aspect-ratio: 1/1;
-   object-fit: cover;
-   width: 100%;
+.paes-card img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 450px;
+    border-radius: 3px;
+}
 
+
+
+
+.pao-nome {
+    color: #ffffff;
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+
+
+.star {
+    color: #DAA520;
+    margin-left: 11em;
+
+}
+
+
+
+
+.opinion {
+    color: #b5b5b5;
+    font-size: .9em;
+}
+
+
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .7em;
+    color: #FF6F3C;
+    font-weight: 400;
+}
+
+
+
+
+
+
+/* BOTÃO */
+
+
+.ver-mais {
+    background-color: #32CD32;
+    padding: .3em 3em;
+    border-radius: 2px;
+    display: inline-block;
+    margin-left: 11em;
+    font-size: .9em;
+    color: #ffffff;
     
 }
