@@ -131,13 +131,14 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     margin-bottom: 5em;
+
 }
 
 
 
 
 section {
-    padding-top: 4em;
+    padding-top: 2em;
 }
 
 
@@ -287,4 +288,16 @@ span {
     max-width: 100%;
     object-fit: cover;
   
+}
+
+
+
+
+
+.paes-card img{
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   width: 100%;
+
+    
 }
