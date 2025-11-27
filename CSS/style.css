@@ -222,7 +222,7 @@ section {
 
 .saiba-btn {
     padding: .5em 2.3em;
-    background-color: #DE8116;
+    background-color: var(--cor--primary);
     display: inline-block;
     border-radius: 2px;
     color: #fff;
@@ -265,7 +265,7 @@ section {
 
 
 span {
-    color: #DE8116;
+    color: var(--cor--primary);
     font-weight: bold;
 
 
@@ -360,3 +360,13 @@ span {
 
 
 
+
+
+/* ENDEREÇOS */
+
+
+
+footer {
+    background-color: red;
+    margin-top: 1em;
+}
