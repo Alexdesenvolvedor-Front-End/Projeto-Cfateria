@@ -316,8 +316,6 @@ span {
 
 .star {
     color: #DAA520;
-    margin-left: 11em;
-
 }
 
 
@@ -349,11 +347,16 @@ span {
 
 .ver-mais {
     background-color: #32CD32;
-    padding: .3em 3em;
+    display: block;
+    width: fit-content;
+    padding: .5em 3em;
     border-radius: 2px;
-    display: inline-block;
-    margin-left: 11em;
+    margin: 0 auto;
     font-size: .9em;
     color: #ffffff;
-    
+
+
 }
+
+
+
