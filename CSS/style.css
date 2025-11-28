@@ -159,6 +159,13 @@ main img {
 
 
 
+header {
+    position: relative;
+    z-index: 10;
+}
+
+
+
 
 section {
     padding-top: 2em;
