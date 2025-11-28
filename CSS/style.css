@@ -130,10 +130,7 @@ body {
 
 }
 
-main{
-    width: 100%;
-    
-}
+
 
 
 main img {
@@ -148,6 +145,7 @@ main img {
 
 .img-principal {
     position: relative;
+    overflow: hidden;
 }
 
 
