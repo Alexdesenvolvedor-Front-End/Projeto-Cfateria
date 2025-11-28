@@ -132,6 +132,11 @@ body {
 
 
 
+main{
+     overflow: hidden;
+}
+
+
 
 main img {
     width: 500px;
@@ -145,7 +150,7 @@ main img {
 
 .img-principal {
     position: relative;
-    overflow: hidden;
+   
 }
 
 
