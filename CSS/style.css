@@ -35,8 +35,7 @@
 /* PAINEL */
 
 .offcanvas {
-    background-color: var(--cor--painel);
-    z-index: 1050;
+    background-color: var(--cor--painel)
 }
 
 
@@ -55,6 +54,8 @@
     font-size: 1.4em;
     color: #ffffff;
 
+
+
 }
 
 
@@ -64,7 +65,9 @@
 }
 
 
-
+.navbar-toggler {
+    border: none;
+}
 
 
 /* FORMULÁRIO */
@@ -127,72 +130,26 @@ textarea::placeholder {
 html,
 body {
     background-color: #2b2b2b;
-    overflow-x: hidden
-}
-
-
-
-
-main img {
-    width: 500px;
-    margin-top: -4em;
-    margin-right: 10em;
-    aspect-ratio: 1/1;
-
+    overflow-x: hidden;
+    background-image: url(https://static.wixstatic.com/media/nsplsh_5468315376372d31344c38~mv2.jpg/v1/fill/w_1897,h_841,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_5468315376372d31344c38~mv2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
 
 }
 
 
 
-.img-principal {
-    position: relative;
-
-}
 
 
 
-.text {
-    position: absolute;
-    left: .9em;
-    color: #ffffff;
-    font-size: 1.5em;
-    font-weight: bolder;
-}
 
-
-
-header {
-    position: relative;
-    z-index: 10;
-}
 
 
 
 
 section {
     padding-top: 2em;
-}
-
-
-
-
-
-
-
-.text-background {
-    background-color: var(--cor--primary);
-    margin-top: -2em;
-
-}
-
-
-
-.text-background img {
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-
 }
 
 
@@ -210,14 +167,40 @@ section {
 
 
 
+.text-backgroud-color {
+    background-color: var(--cor--primary);
+    margin-top: 8em;
+    height: 400px;
 
-.text-background p {
+}
+
+
+
+
+
+
+
+.text-backgroud-color img {
+    max-width: 300px;
+    width: 100%;
+    margin-top: 1.5em;
+
+}
+
+
+
+
+
+
+.text-backgroud-color p {
     color: #ddd;
     font-size: .9em;
     letter-spacing: 1px;
     font-style: italic;
     text-align: left;
-    padding: 1em 1em;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 1em;
 
 }
 
@@ -292,8 +275,8 @@ section {
 .avaliacao {
     font-size: .8em;
     color: #2a1f1a;
-    padding: 2em;
     letter-spacing: 1px;
+
 }
 
 
@@ -321,7 +304,8 @@ span {
 .foto-padaria img {
     max-width: 100%;
     object-fit: cover;
-
+    display: block;
+    margin: 1em 0;
 }
 
 
@@ -358,6 +342,9 @@ span {
 .opinion {
     color: #b5b5b5;
     font-size: .9em;
+    width: 50%;
+    margin: 0 auto;
+
 }
 
 
@@ -376,7 +363,7 @@ span {
 
 
 
-/* BOTÃO */
+
 
 
 .ver-mais {
@@ -391,9 +378,3 @@ span {
 
 
 }
-
-
-
-
-
-/* ENDEREÇOS */
