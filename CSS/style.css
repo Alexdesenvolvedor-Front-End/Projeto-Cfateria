@@ -126,12 +126,35 @@ textarea::placeholder {
 
 body {
     background-color: #2b2b2b;
-    background-image: url("https://static.wixstatic.com/media/nsplsh_5468315376372d31344c38~mv2.jpg/v1/fill/w_1897,h_841,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_5468315376372d31344c38~mv2.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
     margin-bottom: 5em;
 
+}
+
+
+
+
+main img {
+    width: 500px;
+    height: 300px;
+    margin-top: -6em;
+    margin-right: 10em;
+
+}
+
+
+
+.img-principal {
+    position: relative;
+}
+
+
+
+.text {
+    position: absolute;
+    left: .9em;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 
 
@@ -143,18 +166,23 @@ section {
 
 
 
-.text h1 {
-    color: #ffffff;
-    margin-left: 1em;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
 
 
 
 .text-background {
     background-color: var(--cor--primary);
+    margin-top: -2em;
+
+}
+
+
+
+.text-background img {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 
 }
 
@@ -172,14 +200,6 @@ section {
 
 
 
-.text-background h4 {
-    color: #3A3A3A;
-    margin-top: 1em;
-    font-weight: 700;
-
-}
-
-
 
 
 .text-background p {
@@ -187,7 +207,9 @@ section {
     font-size: .9em;
     letter-spacing: 1px;
     font-style: italic;
-    margin-top: 1em;
+    text-align: left;
+    padding: 1em 1em;
+
 }
 
 
@@ -199,6 +221,10 @@ section {
     background-color: #f5f5f5;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
     border-radius: 2px;
+    max-width: 220px;
+    margin: 0 auto;
+
+
 
 
 
@@ -209,13 +235,12 @@ section {
 
 
 .menu-card img {
-    width: 50%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+    display: block;
     margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 50%;
-    margin-top: 2em;
-
 }
 
 
@@ -363,10 +388,3 @@ span {
 
 
 /* ENDEREÇOS */
-
-
-
-footer {
-    background-color: red;
-    margin-top: 1em;
-}
