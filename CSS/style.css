@@ -243,7 +243,7 @@ section {
     background-color: var(--cor--primary);
     display: inline-block;
     border-radius: 2px;
-    color: #fff;
+    color: #e5e5e5;
     border: none;
     font-size: .8em;
     transition: transform .2s ease;
@@ -368,14 +368,15 @@ span {
 
 
 .ver-mais {
-    background-color: #32CD32;
+    background-color: var(--cor--primary);
     display: block;
     width: fit-content;
     padding: .5em 3em;
     border-radius: 2px;
     margin: 0 auto;
     font-size: .9em;
-    color: #ffffff;
+    color: #e5e5e5;
+    text-decoration: none;
 
 
 }
@@ -387,7 +388,7 @@ span {
     width: 80px;
     border-radius: 50%;
     margin-bottom: 1em;
-    
+
 
 }
 
@@ -404,7 +405,7 @@ span {
 
 .text-footer {
     color: #6B3F2D;
-    font-weight: 400;
+    font-weight: 600;
 
 }
 
@@ -419,4 +420,26 @@ span {
     color: #e6e6e6;
     list-style-type: none;
     font-size: .9em;
+}
+
+
+
+.link-bt {
+    background-color: #2C1F1A;
+    padding: .6em 2em;
+    display: inline-block;
+    border-radius: 2px;
+    margin: 1em 0;
+    color: #e5e5e5;
+    text-decoration: none;
+    border: none;
+    transition: .5s ease;
+
+
+}
+
+
+
+.link-bt:hover {
+    transform: scale(0.95);
 }
