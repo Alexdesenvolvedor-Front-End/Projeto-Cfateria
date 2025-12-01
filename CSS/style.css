@@ -1,461 +1,310 @@
 /* ==================== RESET ==================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Lato", sans-serif;
 }
 
-
-
+/* ==================== ROOT VARIABLES ==================== */
 :root {
-    --cor--painel: #1F1F1F;
-    --cor--primary: #DE8116;
-
+--cor--painel: #1F1F1F;
+--cor--primary: #DE8116;
 }
 
-
-
-
-
-
-/* LINKS */
-
-
+/* ==================== LINKS ==================== */
 .list-unstyled a {
-    display: inline-block;
-    padding: .5em 0;
-    margin-left: .9em;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
+display: inline-block;
+padding: .5em 0;
+margin-left: .9em;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 1px;
 }
 
-/* PAINEL */
-
+/* ==================== PAINEL / OFFCANVAS ==================== */
 .offcanvas {
-    background-color: var(--cor--painel)
+background-color: var(--cor--painel);
 }
 
-
-
-
-/* BTN CLOSE */
+/* ==================== BOTÃO CLOSE ==================== */
 .btn-close {
-    filter: invert(1);
-
+filter: invert(1);
 }
 
-
-/* MENU HAMBURGUER */
-
+/* ==================== MENU HAMBÚRGUER ==================== */
 .bi-list {
-    font-size: 1.4em;
-    color: #ffffff;
-
-
-
+font-size: 1.4em;
+color: #ffffff;
 }
-
-
-.navbar-toggler:focus {
-    box-shadow: none;
-    outline: none;
-}
-
 
 .navbar-toggler {
-    border: none;
+border: none;
 }
 
+.navbar-toggler:focus {
+box-shadow: none;
+outline: none;
+}
 
-/* FORMULÁRIO */
-
-
+/* ==================== FORMULÁRIO ==================== */
 .contact {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-    letter-spacing: 2px;
+color: #ffffff;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1.8em;
+letter-spacing: 2px;
 }
-
 
 form label {
-    color: var(--cor--primary);
-    font-weight: 300;
+color: var(--cor--primary);
+font-weight: 300;
 }
-
-
 
 form input,
 textarea {
-    background-color: transparent;
-    margin-bottom: 1.2em;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    border-bottom: 1px solid #5A5A5A;
-    color: #ddd;
-
+background-color: transparent;
+margin-bottom: 1.2em;
+border: none;
+outline: none;
+box-shadow: none;
+border-bottom: 1px solid #5A5A5A;
+color: #ddd;
 }
-
-
 
 input::placeholder,
 textarea::placeholder {
-    font-size: .8em;
-    color: #bfbfbf56;
+font-size: .8em;
+color: #bfbfbf56;
 }
-
-
 
 /* BOTÃO */
-
-
 .button {
-    background-color: transparent;
-    border: none;
-    color: var(--cor--primaria);
-    font-style: italic;
+background-color: transparent;
+border: none;
+color: var(--cor--primaria);
+font-style: italic;
 }
 
-
-
-
-/* BODY */
-
-
+/* ==================== BODY ==================== */
 html,
 body {
-    background-color: #2b2b2b;
-    overflow-x: hidden;
-    background-image: url(https://static.wixstatic.com/media/nsplsh_5468315376372d31344c38~mv2.jpg/v1/fill/w_1897,h_841,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_5468315376372d31344c38~mv2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
-    /* margin-bottom: 2em; */
-
+background-color: #2b2b2b;
+overflow-x: hidden;
+background-image: url(https://static.wixstatic.com/media/nsplsh_5468315376372d31344c38~mv2.jpg/v1/fill/w_1897,h_841,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_5468315376372d31344c38~mv2.jpg
+);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: top center;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* ==================== SEÇÕES GERAIS ==================== */
 section {
-    padding-top: 2em;
+padding-top: 2em;
 }
-
-
 
 .title {
-
-    color: #e8e8e8;
-    font-weight: 700;
-    font-size: 1.6em;
-    margin-top: .9em;
-    text-transform: uppercase;
-    font-family: 'Dancing Script', cursive;
+color: #e8e8e8;
+font-weight: 700;
+font-size: 1.6em;
+margin-top: .9em;
+text-transform: uppercase;
+font-family: 'Dancing Script', cursive;
 }
 
-
-
-
+/* ==================== BLOCO DE TEXTO ==================== */
 .text-backgroud-color {
-    background-color: var(--cor--primary);
-    margin-top: 6em;
-    height: 400px;
-    border: 2px solid var(--cor--primary);
-
+background-color: var(--cor--primary);
+margin-top: 6em;
+height: 400px;
+border: 2px solid var(--cor--primary);
 }
-
-
-
-
-
-
 
 .text-backgroud-color img {
-    max-width: 300px;
-    width: 100%;
-    margin-top: 1.5em;
-
+max-width: 300px;
+width: 100%;
+margin-top: 1.5em;
 }
-
-
-
-
-
 
 .text-backgroud-color p {
-    color: #ddd;
-    font-size: .9em;
-    letter-spacing: 1px;
-    font-style: italic;
-    text-align: left;
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 1em;
-
+color: #ddd;
+font-size: .9em;
+letter-spacing: 1px;
+font-style: italic;
+text-align: left;
+width: 300px;
+margin: 1em auto 0 auto;
 }
 
-
-
-
+/* ==================== MENU CARD ==================== */
 .menu-card {
-    padding: 1em;
-    text-align: center;
-    background-color: #f5f5f5;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
-    border-radius: 2px;
-    max-width: 220px;
-    margin: 0 auto;
-
-
-
-
-
+padding: 1em;
+text-align: center;
+background-color: #f5f5f5;
+box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
+border-radius: 2px;
+max-width: 220px;
+margin: 0 auto;
 }
-
-
-
-
 
 .menu-card img {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
+display: block;
+margin: 0 auto;
+width: 100px;
+height: 100px;
+object-fit: cover;
+border-radius: 50%;
 }
-
-
 
 .saiba-btn {
-    padding: .5em 2.3em;
-    background-color: var(--cor--primary);
-    display: inline-block;
-    border-radius: 2px;
-    color: #e5e5e5;
-    border: none;
-    font-size: .8em;
-
+padding: .5em 2.3em;
+background-color: var(--cor--primary);
+display: inline-block;
+border-radius: 2px;
+color: #e5e5e5;
+border: none;
+font-size: .8em;
 }
-
-
-
-
-
 
 .name {
-    color: #3e2723;
-    margin-top: 1em;
-    font-size: .8em;
-    font-weight: 500;
+color: #3e2723;
+margin-top: 1em;
+font-size: .8em;
+font-weight: 500;
 }
 
-
-
+/* ==================== CAROUSEL ==================== */
 .carousel-item {
-    background-color: #f5e6d3;
-    height: 250px;
+background-color: #f5e6d3;
+height: 250px;
 }
-
-
 
 .avaliacao {
-    font-size: .8em;
-    color: #2a1f1a;
-    letter-spacing: 1px;
-
+font-size: .8em;
+color: #2a1f1a;
+letter-spacing: 1px;
 }
-
-
 
 span {
-    color: var(--cor--primary);
-    font-weight: bold;
-
-
-
+color: var(--cor--primary);
+font-weight: bold;
 }
-
-
 
 .stars i {
-    color: #DAA520;
-    display: inline-block;
-    margin-top: .5em;
-
+color: #DAA520;
+display: inline-block;
+margin-top: .5em;
 }
 
-
-
-
+/* ==================== FOTOS E CARDS ==================== */
 .foto-padaria img {
-    max-width: 100%;
-    object-fit: cover;
-    display: block;
-    margin: 1em 0;
+max-width: 100%;
+object-fit: cover;
+display: block;
+margin: 1em 0;
 }
-
-
-
-
 
 .paes-card img {
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    width: 450px;
-    border-radius: 3px;
+aspect-ratio: 16/9;
+object-fit: cover;
+width: 450px;
+border-radius: 3px;
 }
-
-
-
 
 .pao-nome {
-    color: #ffffff;
-    margin-top: 1em;
-    font-weight: 400;
-    font-size: 1.2em;
-    text-transform: uppercase;
+color: #ffffff;
+margin-top: 1em;
+font-weight: 400;
+font-size: 1.2em;
+text-transform: uppercase;
 }
-
-
 
 .star {
-    color: #DAA520;
+color: #DAA520;
 }
-
-
-
 
 .opinion {
-    color: #b5b5b5;
-    font-size: .9em;
-    width: 50%;
-    margin: 0 auto;
-
+color: #b5b5b5;
+font-size: .9em;
+width: 50%;
+margin: 0 auto;
 }
-
-
 
 .subtitulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: .7em;
-    color: #FF6F3C;
-    font-weight: 400;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: .7em;
+color: #FF6F3C;
+font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
+/* ==================== VER MAIS ==================== */
 .ver-mais {
-    background-color: var(--cor--primary);
-    display: block;
-    width: fit-content;
-    padding: .5em 3em;
-    border-radius: 2px;
-    margin: 0 auto;
-    font-size: .9em;
-    color: #e5e5e5;
-    text-decoration: none;
-
-
+background-color: var(--cor--primary);
+display: block;
+width: fit-content;
+padding: .5em 3em;
+border-radius: 2px;
+margin: 0 auto;
+font-size: .9em;
+color: #e5e5e5;
+text-decoration: none;
 }
 
-
-
-
+/* ==================== LOGO ==================== */
 .logo-imagem {
-    width: 80px;
-    border-radius: 50%;
-    margin-bottom: 1em;
-
-
+width: 80px;
+border-radius: 50%;
+margin-bottom: 1em;
 }
 
-
-
+/* ==================== RODAPÉ ==================== */
 #rodape {
-    height: 1700px;
-    background-color: var(--cor--primary);
-    margin-top: 1.5em;
-    padding: 3em;
+height: 1700px;
+background-color: var(--cor--primary);
+margin-top: 1.5em;
+padding: 3em;
 }
-
-
 
 .text-footer {
-    color: #6B3F2D;
-    font-weight: 600;
-
+color: #6B3F2D;
+font-weight: 600;
 }
-
 
 .paragraf {
-    font-size: .9em;
-    color: #e5e5e5;
+font-size: .9em;
+color: #e5e5e5;
 }
-
 
 #rodape li {
-    color: #e6e6e6;
-    list-style-type: none;
-    font-size: .9em;
+color: #e6e6e6;
+list-style-type: none;
+font-size: .9em;
 }
-
-
 
 .link-bt {
-    background-color: #2C1F1A;
-    padding: .6em 2em;
-    display: inline-block;
-    border-radius: 2px;
-    margin: 1em 0;
-    color: #e5e5e5;
-    text-decoration: none;
+background-color: #2C1F1A;
+padding: .6em 2em;
+display: inline-block;
+border-radius: 2px;
+margin: 1em 0;
+color: #e5e5e5;
+text-decoration: none;
 }
-
-
 
 .footer-imagem {
-    width: 100%;
-    object-fit: cover;
-    aspect-ratio: 16/9;
+width: 100%;
+object-fit: cover;
+aspect-ratio: 16/9;
 }
-
-
 
 .icon i {
-    font-size: 2em;
-    color: #ffffff;
+font-size: 2em;
+color: #ffffff;
+transform: scale(1.05);
 }
 
-
-
-.icon i {
-    transform: scale(1.05);
-}
-
-
-
-
-.footer-copy{
-   color: #ccc;
+.footer-copy {
+color: #ccc;
 }

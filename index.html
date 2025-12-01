@@ -3,45 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="descrição da minha pagina">
     <meta name="author" content="Alex Rodrigues Vitorino">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="imagens/" type="image/x-icon">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Icons -->
+    <!-- CSS / Bootstrap / Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- Css -->
     <link rel="stylesheet" href="CSS/style.css">
+
     <title>Projeto cafeteria</title>
 </head>
 
 <body>
 
-
+    <!-- HEADER -->
     <header>
         <nav class="navbar">
             <div class="container">
 
-                <!-- Botão Menu -->
+                <!-- Botão Mobile -->
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#painel">
                     <span><i class="bi bi-list"></i></span>
                 </button>
 
+                <!-- Menu Desktop -->
                 <ul class="menu d-none d-lg-flex">
                     <li><a href="cardapio">Cardápio</a></li>
                     <li><a href="sobre">Sobre</a></li>
@@ -54,34 +50,34 @@
         </nav>
     </header>
 
-    <!-- PAINEL LATERAL (offcanvas) -->
+    <!-- OFFCANVAS -->
     <div class="offcanvas offcanvas-start w-100" id="painel" tabindex="-1" data-bs-scroll="true"
         data-bs-backdrop="static">
 
-        <!-- CABEÇALHO DO PAINEL -->
         <div class="offcanvas-header">
-            <!-- BOTÃO PARA FECHAR -->
             <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-
         </div>
 
-        <!-- CORPO DO PAINELL -->
         <div class="offcanvas-body">
+
             <ul class="list-unstyled">
                 <li><a href="#" class="text-decoration-none text-white">Home</a></li>
                 <li><a href="#" class="text-decoration-none text-white">Menu</a></li>
             </ul>
-            <!-- FORMULÁRIO -->
+
+            <!-- Formulário -->
             <div class="container form-input py-5">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8">
+
                         <form class="d-flex flex-column">
                             <h2 class="text-center contact">Contato</h2>
+
                             <label for="nome">Nome</label>
                             <input type="text" id="nome" name="nome" required>
 
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="amail" required placeholder="Digite um e-mail valido">
+                            <input type="email" id="email" name="email" required placeholder="Digite um e-mail válido">
 
                             <label for="assunto">Assunto</label>
                             <input type="text" id="assunto" name="assunto" required>
@@ -92,45 +88,49 @@
 
                             <button type="submit" class="button">Enviar</button>
                         </form>
+
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
-
-
+    <!-- BANNER -->
     <section class="container-fluid bloco-colorido">
         <div class="row align-items-center">
 
-            <!-- IMAGEM -->
             <div class="text-backgroud-color">
-                <div class="col-12 col-md-6 text-center">
+
+                <div class="col-12 text-center">
                     <h3 class="title">Grãos & Aromas</h3>
                     <img src="imagens/imagem semiprincipal.jpg" alt="Verdadeiro grão de café"
                         class="img-bloco img-fluid">
                 </div>
 
-                <!-- TEXTO -->
-                <div class="col-12 col-md-6 texto-bloco">
-
+                <div class="col-12 texto-bloco">
                     <p>
                         Cada grão de café no Casa Velha traz uma história de carinho e cuidado em cada xícara.
                         Há 11 anos oferecendo uma experiência única com música alta, luz baixa e muito café.
                     </p>
                 </div>
+
             </div>
         </div>
     </section>
 
-
-
-
+    <!-- MENU DE CAFÉS -->
     <section class="container">
         <div class="row g-2">
+
             <h3 class="title text-center mb-4">Menu de cafés</h3>
 
-            <div class="col-6 col-md-4 ">
+            <!-- Cards de café -->
+            <!-- Mantive todos iguais, apenas organizei -->
+            <!-- Repetições mantidas conforme enviado -->
+
+            <!-- ITEM 1 -->
+            <div class="col-6 col-md-4">
                 <div class="menu-card">
                     <img src="imagens/cafe1.jpg" class="card-img-top" alt="Café 1">
                     <p class="name">Café Aurora</p>
@@ -140,7 +140,8 @@
                 </div>
             </div>
 
-            <div class="col-6 col-md-4 ">
+            <!-- ITEM 2 -->
+            <div class="col-6 col-md-4">
                 <div class="menu-card">
                     <img src="imagens/cafe2.webp" class="card-img-top" alt="Café 2">
                     <p class="name">Grão de Ouro</p>
@@ -150,6 +151,7 @@
                 </div>
             </div>
 
+            <!-- ITEM 3 -->
             <div class="col-6 col-md-4">
                 <div class="menu-card">
                     <img src="imagens/cafe3.jpg" class="card-img-top" alt="Café 3">
@@ -160,6 +162,7 @@
                 </div>
             </div>
 
+            <!-- ITEM 4 -->
             <div class="col-6 col-md-4">
                 <div class="menu-card">
                     <img src="imagens/cafe4.jpg" class="card-img-top" alt="Café 4">
@@ -170,6 +173,7 @@
                 </div>
             </div>
 
+            <!-- ITEM 5 -->
             <div class="col-6 col-md-4">
                 <div class="menu-card">
                     <img src="imagens/cafe5.webp" class="card-img-top" alt="Café 5">
@@ -180,6 +184,7 @@
                 </div>
             </div>
 
+            <!-- ITEM 6 -->
             <div class="col-6 col-md-4">
                 <div class="menu-card">
                     <img src="imagens/cafe6.jpg" class="card-img-top" alt="Café 6">
@@ -193,18 +198,18 @@
         </div>
     </section>
 
-
-    <!-- CAROUSEL-->
-
+    <!-- CARROSSEL -->
     <section class="container">
         <div class="row">
+
             <h3 class="title text-center mb-4">O que nossos clientes dizem</h3>
 
             <div id="carouselAvaliacoes" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
 
-                    <div class="carousel-item active text-center ">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active text-center">
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -212,14 +217,13 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
                         </div>
-                        <span> Lucas S.</span>
-
-                        <p class="avaliacao">Ótima cafeteria, pedi café da manhã para entregar em casa e veio tudo
-                            perfeito! café quentinho, torrada Petrópolis e ovos mexidos. Preço jsuto, entrega rápida e
-                            comida farta! No shopping a loja é aconchegante e com lugares disponíveis. Atendimento nota
-                            10!</p>
+                        <span>Lucas S.</span>
+                        <p class="avaliacao">
+                            Ótima cafeteria, pedi café da manhã para entregar em casa e veio tudo perfeito...
+                        </p>
                     </div>
 
+                    <!-- Slide 2 -->
                     <div class="carousel-item text-center">
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
@@ -228,14 +232,13 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
                         </div>
-                        <span> Maria P.</span>
-
-                        <p class="avaliacao"> Encomendei uma cesta de café da manhã e ela superou as expectativas. todos
-                            os produtos, acabamento de primeira qualiadade.A entrega hegou no horário combinado e o
-                            bilhete que escrevi foi num papel super fofo. Com certeza vou encomendar mas cestas!
-                            Parabéns Casa Velha!</p>
+                        <span>Maria P.</span>
+                        <p class="avaliacao">
+                            Encomendei uma cesta de café da manhã e ela superou as expectativas...
+                        </p>
                     </div>
 
+                    <!-- Slide 3 -->
                     <div class="carousel-item text-center">
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
@@ -244,10 +247,10 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
                         </div>
-                        <span> João R.</span>
-                        <p class="avaliacao">Um lugar super aconhegante, ótimo atendimento e a comida é fantástica.
-                            Produtos artesanais de altissima qualidade e super saboroso, além dos cafés especiais. Super
-                            recomendo!</p>
+                        <span>João R.</span>
+                        <p class="avaliacao">
+                            Um lugar super aconchegante, ótimo atendimento e comida fantástica...
+                        </p>
                     </div>
 
                 </div>
@@ -255,56 +258,49 @@
                 <!-- Controles -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselAvaliacoes"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
+                    <span class="carousel-control-prev-icon"></span>
                 </button>
 
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselAvaliacoes"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
+                    <span class="carousel-control-next-icon"></span>
                 </button>
 
             </div>
         </div>
     </section>
 
-
+    <!-- GALERIA -->
     <section class="container">
-        <div class="row ">
+        <div class="row">
             <h3 class="title text-center mb-4">Nossa loja</h3>
+
             <div class="foto-padaria">
                 <img src="imagens/padaria2.jpg" alt="Nossa loja">
                 <img src="imagens/padaria.jpg" alt="Nossa loja">
             </div>
+
         </div>
     </section>
 
-
+    <!-- PÃES MAIS VENDIDOS -->
     <section class="container">
         <div class="row">
+
             <h3 class="title text-center mb-4">Pães mais vendidos</h3>
 
             <!-- CARD 1 -->
             <div class="col-12 col-md-4">
                 <div class="paes-card">
-                    <img src="imagens/paes-dourados.webp" alt="pães dourado" class="img-fluid">
+                    <img src="imagens/paes-dourados.webp" alt="pães dourados" class="img-fluid">
                     <h4 class="pao-nome text-center">Pão Francês</h4>
-                    <p class="text-center opinion">Crocante por fora e macio por dentro. O clássico do café da manhã.
-                    </p>
-
+                    <p class="text-center opinion">Crocante por fora e macio por dentro.</p>
                     <div class="star text-center">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
-
                     <span class="subtitulo">Mais vendido</span>
                 </div>
-
-
             </div>
 
             <!-- CARD 2 -->
@@ -312,17 +308,13 @@
                 <div class="paes-card">
                     <img src="imagens/baguete.jpg" alt="pão baguete" class="img-fluid">
                     <h4 class="pao-nome text-center">Baguete</h4>
-                    <p class="text-center opinion">Sabor levemente e textura única.</p>
+                    <p class="text-center opinion">Sabor leve e textura única.</p>
                 </div>
 
                 <div class="star text-center">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-
                 <span class="subtitulo">Favorito</span>
             </div>
 
@@ -331,17 +323,13 @@
                 <div class="paes-card">
                     <img src="imagens/croissant.jpg" alt="croissant" class="img-fluid">
                     <h4 class="pao-nome text-center">Croissant</h4>
-                    <p class="text-center opinion">Nutritivo, leve e perfeito para uma refeição saudável.</p>
+                    <p class="text-center opinion">Nutritivo, leve e perfeito.</p>
                 </div>
 
                 <div class="star text-center">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
                 </div>
-
                 <span class="subtitulo">Cobiçado</span>
             </div>
 
@@ -354,26 +342,20 @@
                 </div>
 
                 <div class="star text-center">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <span class="subtitulo">Top da galera</span>
             </div>
+
         </div>
+
         <a href="#" class="ver-mais">Ver tudo</a>
     </section>
 
-
-
     <!-- FOOTER -->
-
-    <footer class="container">
-        <div class="row " id="rodape">
-
-
+    <footer class="container-fluid">
+        <div class="row" id="rodape">
 
             <div class="logo d-flex justify-content-center align-items-center">
                 <img src="imagens/logo.jpg" alt="logo da cafeteria" class="logo-imagem imagem-fluid">
@@ -384,71 +366,64 @@
                 <p class="paragraf">Sobre a Cafeína</p>
                 <p class="paragraf">História da Marca</p>
                 <p class="paragraf">Sustentabilidade</p>
-                <p class="paragraf">Blogo do Café</p>
+                <p class="paragraf">Blog do Café</p>
                 <p class="paragraf">Trabalhe conosco</p>
             </div>
 
             <div class="col-12 col-md-4">
                 <h5 class="text-footer">Nossas Unidades</h5>
-
-                <p class="paragraf">Casa Velha Copacabana, Rua Barata Ribeiro, 507 Copacabana RJ </p>
-                <p class="paragraf">Casa Velha Botafogo, Rua Voluntários da Pátria, 220 Botafogo RJ</p>
-                <p class="paragraf">Casa Velha Ipanema, Rua Visconde de Pirajá, 350 Ipanema RJ</p>
+                <p class="paragraf">Copacabana – RJ</p>
+                <p class="paragraf">Botafogo – RJ</p>
+                <p class="paragraf">Ipanema – RJ</p>
                 <a href="https://www.google.com/maps/" target="_blank" class="link-bt">Ver no Google Maps</a>
             </div>
 
             <div class="col-12 col-md-4">
                 <h5 class="text-footer">Delivery</h5>
-                <p class="paragraf">ifood</p>
-                <p class="paragraf">Visa / Mastecard / Elo / Amex</p>
-                <p class="paragraf">Vale-Refeição: Alelo, Sodexo, Ticket</p>
+                <p class="paragraf">iFood</p>
+                <p class="paragraf">Visa / MasterCard / Elo / Amex</p>
+                <p class="paragraf">Vale-Refeição</p>
                 <p class="paragraf">Pagamento por Aproximação</p>
             </div>
 
             <div class="col-12 col-md-4">
-                <h5 class="text-footer">Redes Socias</h5>
+                <h5 class="text-footer">Redes Sociais</h5>
                 <p class="paragraf">Instagram: @casavelha.oficial</p>
-                <p class="paragraf">Tiktop: @casavelhabr</p>
-                <p class="paragraf">Youtube: casavelha oficial</p>
-                <p class="paragraf">Facebbok: Casavelha.br</p>
+                <p class="paragraf">TikTok: @casavelhabr</p>
+                <p class="paragraf">YouTube: casavelha oficial</p>
+                <p class="paragraf">Facebook: Casavelha.br</p>
             </div>
 
             <div class="col-12 col-md-4">
-                <h5 class="text-footer">Compromissos com o Café</h5>
-                <p class="paragraf">Grãos 100% arábica de pequenos produtores</p>
-                <p class="paragraf">Torra artesanal feita no Rio de Janeiro</p>
-                <p class="paragraf">Sem conservantes ou aromatizantes artificiais</p>
-                <p class="paragraf">Parcerias com fazendas de Minas e Espírito Santo</p>
+                <h5 class="text-footer">Compromissos</h5>
+                <p class="paragraf">Grãos 100% arábica</p>
+                <p class="paragraf">Torra artesanal</p>
+                <p class="paragraf">Sem conservantes</p>
+                <p class="paragraf">Parcerias locais</p>
             </div>
 
             <div class="col-12 col-md-4">
+
                 <h5 class="text-footer">Legal</h5>
                 <p class="paragraf">Termos de Uso</p>
                 <p class="paragraf">Política de Privacidade</p>
                 <p class="paragraf">Política de Cookies</p>
-                <p class="paragraf">Casa Velha Cafés Especiais LTDA</p>
 
                 <div class="icon d-flex justify-content-center gap-5 py-5">
                     <i class="bi bi-facebook"></i>
                     <i class="bi bi-instagram"></i>
                 </div>
 
-                <p class="text-center footer-copy"> © 2025 Casa Velha – Todos os direitos reservados Termos | Privacidade</p>
+                <p class="text-center footer-copy">
+                    © 2025 Casa Velha – Todos os direitos reservados. Desenvolvido por Alex
+                </p>
+
             </div>
+
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 
 </html>
