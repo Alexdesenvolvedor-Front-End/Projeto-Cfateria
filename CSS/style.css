@@ -135,6 +135,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
+    /* margin-bottom: 2em; */
 
 }
 
@@ -246,13 +247,10 @@ section {
     color: #e5e5e5;
     border: none;
     font-size: .8em;
-    transition: transform .2s ease;
+
 }
 
 
-.saiba-btn:active {
-    transform: scale(0.95);
-}
 
 
 
@@ -384,7 +382,7 @@ span {
 
 
 
-.logo img {
+.logo-imagem {
     width: 80px;
     border-radius: 50%;
     margin-bottom: 1em;
@@ -395,7 +393,7 @@ span {
 
 
 #rodape {
-    height: 1400px;
+    height: 1700px;
     background-color: var(--cor--primary);
     margin-top: 1.5em;
     padding: 3em;
@@ -432,14 +430,32 @@ span {
     margin: 1em 0;
     color: #e5e5e5;
     text-decoration: none;
-    border: none;
-    transition: .5s ease;
-
-
 }
 
 
 
-.link-bt:hover {
-    transform: scale(0.95);
+.footer-imagem {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+
+
+.icon i {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+
+
+.icon i {
+    transform: scale(1.05);
+}
+
+
+
+
+.footer-copy{
+   color: #ccc;
 }
