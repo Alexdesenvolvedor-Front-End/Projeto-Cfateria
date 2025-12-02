@@ -118,7 +118,7 @@ section {
 
 
 .hero-container {
-    margin-top: 8em;
+    margin-top: 7em;
     border-top: 2px solid var(--cor--primary);
 }
 
@@ -147,14 +147,15 @@ section {
 
 
 .hero-content p {
-    /* color: #ddd; */
-    color: red;
+    color: #ddd;
     font-size: .9em;
     letter-spacing: 1px;
     font-style: italic;
     text-align: left;
     padding: 1em;
-    margin-left: 2em;
+    margin: 0 auto;
+    width: 380px;
+    
 
 }
 
