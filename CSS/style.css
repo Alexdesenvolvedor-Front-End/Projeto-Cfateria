@@ -91,8 +91,7 @@ html,
 body {
     background-color: #2b2b2b;
     overflow-x: hidden;
-    background-image: url(https://static.wixstatic.com/media/nsplsh_5468315376372d31344c38~mv2.jpg/v1/fill/w_1897,h_841,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_5468315376372d31344c38~mv2.jpg
-);
+    background-image: url(https://static.wixstatic.com/media/nsplsh_5468315376372d31344c38~mv2.jpg/v1/fill/w_1897,h_841,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_5468315376372d31344c38~mv2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
@@ -115,17 +114,6 @@ section {
 /* ==================== BLOCO DE TEXTO ==================== */
 
 
-
-
-.hero-container {
-    margin-top: 7em;
-    border-top: 2px solid var(--cor--primary);
-}
-
-
-
-
-
 .hero-content {
     background-color: var(--cor--primary);
 
@@ -133,10 +121,27 @@ section {
 
 
 
+
+
+
+.hero-container {
+    margin-top: 7em;
+    /* border-top: 2px solid var(--cor--primary); */
+}
+
+
+
+
+
+
+
+
+
 .background-imagem {
     max-width: 350px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 2em;
     display: block;
     object-fit: cover;
     aspect-ratio: 16/9;
@@ -152,10 +157,10 @@ section {
     letter-spacing: 1px;
     font-style: italic;
     text-align: left;
-    padding: 1em;
+    padding: .9em;
     margin: 0 auto;
     width: 380px;
-    
+
 
 }
 
@@ -373,10 +378,38 @@ span {
     }
 
 
-    /* header {
-        position: fixed;
-        width: 100%;
-    } */
+
+    .hero-container {
+        margin-top: 52em;
+
+
+    }
+
+
+
+    .hero-content {
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .background-imagem {
+        max-width: 70%;
+
+    }
+
+
+
+    .hero-content p {
+        width: 60%;
+        font-size: 1.5em;
+    }
+
+
+
+
 
 
 
