@@ -119,7 +119,7 @@ section {
 
 .hero-container {
     margin-top: 8em;
-    border-top: 8px solid var(--cor--primary);
+    border-top: 2px solid var(--cor--primary);
 }
 
 
@@ -152,9 +152,9 @@ section {
     letter-spacing: 1px;
     font-style: italic;
     text-align: left;
-    width: 89%;
-    padding: 1.2em;
-    margin: 0 auto;
+    padding: 1em;
+    margin-left: 2em;
+
 }
 
 /* ==================== MENU CARD ==================== */
