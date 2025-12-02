@@ -147,7 +147,8 @@ section {
 
 
 .hero-content p {
-    color: #ddd;
+    /* color: #ddd; */
+    color: red;
     font-size: .9em;
     letter-spacing: 1px;
     font-style: italic;
