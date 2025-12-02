@@ -118,7 +118,7 @@ section {
 
 
 .hero-container {
-    margin-top: 10em;
+    margin-top: 8em;
     border-top: 2px solid var(--cor--primary);
 }
 
@@ -133,6 +133,17 @@ section {
 
 
 
+.background-imagem {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+
+}
+
+
 
 
 .hero-content p {
@@ -141,9 +152,9 @@ section {
     letter-spacing: 1px;
     font-style: italic;
     text-align: left;
-    width: 480px;
+    max-width: 400px;
     padding: 1.2em;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
 
 /* ==================== MENU CARD ==================== */
