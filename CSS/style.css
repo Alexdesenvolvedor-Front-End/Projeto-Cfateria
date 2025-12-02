@@ -126,7 +126,7 @@ section {
 
 .hero-container {
     margin-top: 7em;
-    /* border-top: 2px solid var(--cor--primary); */
+
 }
 
 
@@ -143,7 +143,6 @@ section {
     margin: 0 auto;
     margin-top: 2em;
     display: block;
-    object-fit: cover;
     aspect-ratio: 16/9;
 
 }
@@ -364,9 +363,11 @@ span {
 
     .menu li a {
         display: inline-block;
-        font-size: 1.1em;
+        text-decoration: none;
+        font-size: 1.5em;
         color: #ffffff;
         transition: transform .2s ease;
+        font-family: 'Dancing Script', cursive;
 
     }
 
@@ -397,20 +398,39 @@ span {
 
     .background-imagem {
         max-width: 70%;
+        aspect-ratio: 16/9;
+        border-radius: 25px 0 25px 0;
 
     }
+
+
+
+    .title {
+        font-size: 2.5em;
+        font-weight: 700;
+
+    }
+
 
 
 
     .hero-content p {
-        width: 60%;
-        font-size: 1.5em;
+        width: 70%;
+        font-size: 2em;
+        font-family: 'Dancing Script', cursive;
+        font-style: normal;
+        letter-spacing: 0;
     }
 
 
 
 
 
+
+
+    /* .menu-card {
+        border-radius: 20px 0 20px 0;
+    } */
 
 
 
