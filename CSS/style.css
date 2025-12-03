@@ -175,7 +175,7 @@ section {
 }
 
 .menu-card img {
-    display: inline-block;
+    display: block;
     margin: 0 auto;
     width: 100px;
     height: 100px;
@@ -184,7 +184,7 @@ section {
 }
 
 .saiba-btn {
-    padding: .5em 2.3em;
+    padding: .5em 2em;
     background-color: var(--cor--primary);
     display: inline-block;
     border-radius: 2px;
