@@ -175,7 +175,7 @@ section {
 }
 
 .menu-card img {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     width: 100px;
     height: 100px;
