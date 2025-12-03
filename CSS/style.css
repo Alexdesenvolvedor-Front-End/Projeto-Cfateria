@@ -1,4 +1,5 @@
 /* ==================== RESET ==================== */
+/* Remove margens, espaçamentos padrões e define fonte global */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +8,17 @@
 }
 
 /* ==================== ROOT VARIABLES ==================== */
+/* Variáveis de cores reutilizáveis no projeto */
 :root {
     --cor--painel: #1F1F1F;
     --cor--primary: #DE8116;
 }
 
 /* ==================== LINKS ==================== */
+/* Estilização dos links do footer/menu lateral */
 .list-unstyled a {
     display: inline-block;
+    /* Permite espaçamento vertical */
     padding: .5em 0;
     margin-left: .9em;
     font-weight: 500;
@@ -23,31 +27,37 @@
 }
 
 /* ==================== PAINEL / OFFCANVAS ==================== */
+/* Estilo do menu lateral mobile (offcanvas) */
 .offcanvas {
     background-color: var(--cor--painel);
 }
 
 /* ==================== BOTÃO CLOSE ==================== */
+/* Deixa o X (close) branco sem trocar a imagem */
 .btn-close {
     filter: invert(1);
 }
 
 /* ==================== MENU HAMBÚRGUER ==================== */
+/* Ícone da navbar mobile */
 .bi-list {
     font-size: 1.4em;
     color: #ffffff;
 }
 
+/* Remove borda do botão do menu */
 .navbar-toggler {
     border: none;
 }
 
+/* Remove o contorno azul ao clicar */
 .navbar-toggler:focus {
     box-shadow: none;
     outline: none;
 }
 
 /* ==================== FORMULÁRIO ==================== */
+/* Título da seção de contato */
 .contact {
     color: #ffffff;
     text-transform: uppercase;
@@ -56,11 +66,13 @@
     letter-spacing: 2px;
 }
 
+/* Cor dos labels do formulário */
 form label {
     color: var(--cor--primary);
     font-weight: 300;
 }
 
+/* Inputs e textarea do formulário */
 form input,
 textarea {
     background-color: transparent;
@@ -69,9 +81,11 @@ textarea {
     outline: none;
     box-shadow: none;
     border-bottom: 1px solid #5A5A5A;
+    /* Linha inferior */
     color: #ddd;
 }
 
+/* Placeholder dos inputs */
 input::placeholder,
 textarea::placeholder {
     font-size: .8em;
@@ -79,6 +93,7 @@ textarea::placeholder {
 }
 
 /* BOTÃO */
+/* Botão transparente estilizado */
 .button {
     background-color: transparent;
     border: none;
@@ -87,10 +102,12 @@ textarea::placeholder {
 }
 
 /* ==================== BODY ==================== */
+/* Fundo geral do site */
 html,
 body {
     background-color: #2b2b2b;
     overflow-x: hidden;
+    /* Evita scroll lateral */
     background-image: url(https://static.wixstatic.com/media/nsplsh_5468315376372d31344c38~mv2.jpg/v1/fill/w_1897,h_841,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_5468315376372d31344c38~mv2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -98,45 +115,33 @@ body {
 }
 
 /* ==================== SEÇÕES GERAIS ==================== */
+/* Espaçamento padrão das sections */
 section {
     padding-top: 2em;
 }
 
+/* Títulos das seções */
 .title {
     color: #e8e8e8;
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin-top: .9em;
     text-transform: uppercase;
     font-family: 'Dancing Script', cursive;
 }
 
 /* ==================== BLOCO DE TEXTO ==================== */
-
-
+/* Fundo da parte hero */
 .hero-content {
     background-color: var(--cor--primary);
-
 }
 
-
-
-
-
-
+/* Container principal */
 .hero-container {
     margin-top: 7em;
-
 }
 
-
-
-
-
-
-
-
-
+/* Imagem do topo (hero) */
 .background-imagem {
     max-width: 350px;
     width: 100%;
@@ -144,12 +149,9 @@ section {
     margin-top: 2em;
     display: block;
     aspect-ratio: 16/9;
-
 }
 
-
-
-
+/* Texto dentro do hero */
 .hero-content p {
     color: #ddd;
     font-size: .9em;
@@ -159,11 +161,10 @@ section {
     padding: .9em;
     margin: 0 auto;
     width: 380px;
-
-
 }
 
 /* ==================== MENU CARD ==================== */
+/* Card dos produtos */
 .menu-card {
     padding: 1em;
     text-align: center;
@@ -174,6 +175,7 @@ section {
     margin: 0 auto;
 }
 
+/* Imagem do card */
 .menu-card img {
     display: block;
     margin: 0 auto;
@@ -183,6 +185,7 @@ section {
     border-radius: 50%;
 }
 
+/* Botão SAIBA MAIS */
 .saiba-btn {
     padding: .7em 2em;
     background-color: var(--cor--primary);
@@ -191,8 +194,10 @@ section {
     color: #e5e5e5;
     border: none;
     font-size: .8em;
+    text-decoration: none;
 }
 
+/* Nome do produto */
 .name {
     color: #3e2723;
     margin-top: 1em;
@@ -201,22 +206,26 @@ section {
 }
 
 /* ==================== CAROUSEL ==================== */
+/* Cards do carousel */
 .carousel-item {
     background-color: #f5e6d3;
     height: 250px;
 }
 
+/* Texto da avaliação */
 .avaliacao {
     font-size: .8em;
     color: #2a1f1a;
     letter-spacing: 1px;
 }
 
+/* Destaque (geral) */
 span {
     color: var(--cor--primary);
     font-weight: bold;
 }
 
+/* Estrelas de avaliação */
 .stars i {
     color: #DAA520;
     display: inline-block;
@@ -224,20 +233,23 @@ span {
 }
 
 /* ==================== FOTOS E CARDS ==================== */
+/* Imagens gerais */
 .foto-padaria img {
     max-width: 100%;
-    object-fit: cover;
+    aspect-ratio: 16/9;
     display: block;
     margin: 1em 0;
 }
 
+/* Cards dos pães */
 .paes-card img {
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
     object-fit: cover;
     width: 450px;
     border-radius: 3px;
 }
 
+/* Nome do pão */
 .pao-nome {
     color: #ffffff;
     margin-top: 1em;
@@ -246,10 +258,12 @@ span {
     text-transform: uppercase;
 }
 
+/* Estrela dourada */
 .star {
     color: #DAA520;
 }
 
+/* Opiniões */
 .opinion {
     color: #b5b5b5;
     font-size: .9em;
@@ -257,6 +271,7 @@ span {
     margin: 0 auto;
 }
 
+/* Subtítulos */
 .subtitulo {
     display: flex;
     justify-content: center;
@@ -267,6 +282,7 @@ span {
 }
 
 /* ==================== VER MAIS ==================== */
+/* Botão ver mais */
 .ver-mais {
     background-color: var(--cor--primary);
     display: block;
@@ -280,6 +296,7 @@ span {
 }
 
 /* ==================== LOGO ==================== */
+/* Logo do site */
 .logo-imagem {
     width: 80px;
     border-radius: 50%;
@@ -287,29 +304,34 @@ span {
 }
 
 /* ==================== RODAPÉ ==================== */
+/* Container geral do rodapé */
 #rodape {
-    height: 1700px;
+    height: 1500px;
     background-color: var(--cor--primary);
     margin-top: 1.5em;
     padding: 3em;
 }
 
+/* Títulos do footer */
 .text-footer {
     color: #6B3F2D;
     font-weight: 600;
 }
 
+/* Texto do rodapé */
 .paragraf {
     font-size: .9em;
     color: #e5e5e5;
 }
 
+/* Lista do footer */
 #rodape li {
     color: #e6e6e6;
     list-style-type: none;
     font-size: .9em;
 }
 
+/* Botão do rodapé */
 .link-bt {
     background-color: #2C1F1A;
     padding: .6em 2em;
@@ -320,43 +342,35 @@ span {
     text-decoration: none;
 }
 
+/* Imagem do rodapé */
 .footer-imagem {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 16/9;
 }
 
+/* Ícones sociais */
 .icon i {
     font-size: 2em;
     color: #ffffff;
     transform: scale(1.05);
+    margin-bottom: 1em;
 }
 
+/* Copyright */
 .footer-copy {
     color: #ccc;
+    font-size: .9em;
 }
 
-
-
-
-
-
 /* ==================== MEDIA QUERY ==================== */
-
-
-/* Tablet/Desktop */
-
-
+/* Responsividade para tablet e desktop */
 @media (min-width: 768px) {
 
-    /* MENU DESKTOP */
-
+    /* Menu superior desktop */
     section {
         margin-top: 2em;
     }
-
-
-
 
     .menu {
         width: 100%;
@@ -376,26 +390,18 @@ span {
         color: #ffffff;
         transition: transform .2s ease;
         font-family: 'Dancing Script', cursive;
-
     }
 
     .menu li a:hover {
         color: var(--cor--primary);
         transform: scale(1.1);
-
-
     }
-
-
 
     .hero-container {
         margin-top: 52em;
-
-
     }
 
-
-
+    /* Hero grande desktop */
     .hero-content {
         height: 800px;
         display: flex;
@@ -403,24 +409,15 @@ span {
         align-items: center;
     }
 
-
     .background-imagem {
         max-width: 70%;
         aspect-ratio: 16/9;
-
-
     }
-
-
 
     .title {
         font-size: 2.5em;
         font-weight: 700;
-
     }
-
-
-
 
     .hero-content p {
         width: 70%;
@@ -430,38 +427,136 @@ span {
         letter-spacing: 0;
     }
 
-
-
-
+    /* Animação de hover dos cards */
     .card {
         border-radius: 0;
-        background-color: #ccc;
-     
-       
-        
-       
+        transition: 3s ease;
+    }
 
+    .menu-card:hover {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    /* Botão saiba mais maior */
+    .saiba-btn {
+        padding: .7em 3em;
+        font-size: .9em;
+        text-decoration: none;
+        transition: 1s ease-in-out;
+    }
+
+    .saiba-btn:hover {
+        transform: scale(1.1);
+    }
+
+    .name {
+        font-size: 1em;
+    }
+
+    .carousel-item {
+        height: 300px;
+    }
+
+    .stars {
+        margin-top: 1em;
+    }
+
+    span {
+        font-size: 1.2em;
+        margin-top: 1em;
+        display: block;
+    }
+
+    .avaliacao {
+        font-size: 1em;
+    }
+
+    .foto-padaria img {
+        width: 80%;
+        margin: 0 auto;
+        padding: .7em;
+        aspect-ratio: 16/9;
+    }
+
+    /* Cards dos pães */
+    .paes-card {
+        border: 1px solid #ddd;
+        border-radius: 25px 0 25px 0;
+        overflow: hidden;
+        transition: .5s ease-in-out;
+    }
+
+
+    .paes-card:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 15px rgba(255, 255, 255, 0.25);
+        cursor: pointer;
     }
 
 
 
+    .cardbody {
+        border: 2px solid #e5e5e5;
+        background-color: #ffffff;
+        padding: 1em;
 
-    .menu-card {
-       width: 100%;
-       flex: 1;
-       
     }
 
 
+    .opinion {
+        color: #4a2b1a;
+        width: 250px;
+    }
 
+    /* Botão ver mais desktop */
+    .ver-mais {
+        display: inline-block;
+        margin-top: 3em;
+        padding: .8em 4em;
+        transition: .5s ease-in-out;
+    }
 
+    .ver-mais:hover {
+        transform: scale(1.2);
+    }
 
+    /* Rodapé desktop */
+    #rodape {
+        height: 800px;
+    }
 
+    .logo-imagem {
+        width: 100px;
+    }
 
-    /* .menu-card {
-        border-radius: 20px 0 20px 0;
-    } */
+    .text-footer {
+        font-size: 1.5em;
+    }
 
+    .paragraf {
+        font-size: 1em;
+    }
 
+    .link-bt {
+        padding: 1em 4em;
+        font-size: 1.1em;
+        border-radius: 4px;
+        transition: .5s ease-in-out;
+    }
 
+    .link-bt:hover {
+        transform: scale(1.2);
+    }
+
+    .icon i {
+        transition: .5s ease-in-out;
+    }
+
+    .icon i:hover {
+        transform: scale(1.2);
+    }
+
+    .footer-copy {
+        font-size: 1.1em;
+    }
 }
