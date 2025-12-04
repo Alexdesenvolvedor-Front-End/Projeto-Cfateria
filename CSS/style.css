@@ -242,11 +242,32 @@ span {
 }
 
 /* Cards dos pães */
+
+.paes-card {
+    border: 1px solid #ddd;
+    width: 400px;
+    margin: 0 auto;
+    margin: 1em;
+    overflow: hidden;
+    border-radius: 4px;
+
+}
+
+
 .paes-card img {
-    aspect-ratio: 4/3;
+    width: 400px;
+    height: 200px;
     object-fit: cover;
-    width: 450px;
-    border-radius: 3px;
+    aspect-ratio: 4/3;
+
+}
+
+
+
+.cardbody {
+    background-color: #ffffff;
+    padding: 1em;
+
 }
 
 /* Nome do pão */
@@ -484,6 +505,7 @@ span {
         border-radius: 25px 0 25px 0;
         overflow: hidden;
         transition: .5s ease-in-out;
+      
     }
 
 
