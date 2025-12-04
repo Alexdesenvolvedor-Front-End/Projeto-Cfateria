@@ -1,0 +1,53 @@
+/* ==================== RESET ==================== */
+/* Remove margens, espaçamentos padrões e define fonte global */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== ROOT VARIABLES ==================== */
+/* Variáveis de cores reutilizáveis no projeto */
+
+:root {
+    --primary-body: #1F1F1F;
+    --secondary-font: #DE8116;
+    --border: #b2b2b2;
+
+}
+
+
+/* ==================== BODY ==================== */
+/* Fundo geral do site */
+
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/25/19/53/coffee-1279534_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary-body);
+
+
+}
+
+/* Ícone da navbar mobile */
+
+span .bi-list {
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+
+/* Remove borda do botão do menu */
+.navbar-toggler {
+    border: none;
+}
+
+/* Remove o contorno azul ao clicar */
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
