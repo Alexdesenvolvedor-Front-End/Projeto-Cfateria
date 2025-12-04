@@ -19,19 +19,49 @@
 }
 
 
-/* ==================== BODY ==================== */
-/* Fundo geral do site */
 
 
 body {
-    background-image: url(https://cdn.pixabay.com/photo/2016/03/25/19/53/coffee-1279534_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-color: var(--primary-body);
+}
+
+
+.header {
+    position: relative;
+}
+
+
+h1 {
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    top: 5em;
+    padding-left: 5em;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #ffffff;
+
 
 
 }
+
+
+
+.header img {
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    /* navbar por cima */
+}
+
 
 /* Ícone da navbar mobile */
 
@@ -50,4 +80,63 @@ span .bi-list {
 .navbar-toggler:focus {
     box-shadow: none;
     outline: none;
+}
+
+
+
+
+.title {
+    color: var(--secondary-font);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin-left: 1em;
+
+}
+
+
+
+
+.lista li {
+    list-style-type: none;
+}
+
+
+
+.lista h4 {
+    color: #ED9F52;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+
+.paragraf {
+    color: #ffffff;
+    font-weight: 100;
+    font-size: .8em;
+    letter-spacing: 1px;
+
+}
+
+
+
+.coados {
+    color: var(--secondary-font);
+}
+
+
+
+
+.rodape {
+    background-color: var(--secondary-font);
+    height: 150px;
+}
+
+
+
+.icon i {
+    font-size: 2em;
+    color: #ffffff;
+   
+    
 }
