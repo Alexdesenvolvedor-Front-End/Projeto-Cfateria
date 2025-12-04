@@ -35,7 +35,7 @@ h1 {
     position: absolute;
     font-family: 'Dancing Script', cursive;
     top: 5em;
-    padding-left: 5em;
+    padding-left: 4em;
     font-size: 2em;
     text-transform: uppercase;
     font-weight: bolder;
@@ -120,8 +120,17 @@ span .bi-list {
 
 
 
+.lista li .paragraf{
+    margin-bottom: .1em;
+    line-height: 1.5;
+
+}
+
+
+
 .coados {
     color: var(--secondary-font);
+    margin-bottom: .1em;
 }
 
 
@@ -137,6 +146,6 @@ span .bi-list {
 .icon i {
     font-size: 2em;
     color: #ffffff;
-   
-    
+
+
 }
