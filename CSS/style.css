@@ -112,6 +112,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
+   
 }
 
 /* ==================== SEÇÕES GERAIS ==================== */
@@ -355,7 +356,6 @@ span {
 .icon i {
     font-size: 2em;
     color: #ffffff;
-    transform: scale(1.05);
     margin-bottom: 1em;
 }
 

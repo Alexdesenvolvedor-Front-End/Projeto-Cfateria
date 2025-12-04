@@ -26,6 +26,27 @@ body {
 }
 
 
+
+.list-unstyled a {
+    display: inline-block;
+    /* Permite espaçamento vertical */
+    padding: .5em 0;
+    margin-left: .9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+.offcanvas {
+    background-color: var(--primary-body);
+}
+
+
 .header {
     position: relative;
 }
@@ -111,7 +132,7 @@ span .bi-list {
 
 
 .paragraf {
-    color: #ffffff;
+    color: #F7F7F7;
     font-weight: 100;
     font-size: .8em;
     letter-spacing: 1px;
@@ -120,7 +141,7 @@ span .bi-list {
 
 
 
-.lista li .paragraf{
+.lista li .paragraf {
     margin-bottom: .1em;
     line-height: 1.5;
 
