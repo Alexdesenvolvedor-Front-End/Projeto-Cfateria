@@ -41,10 +41,51 @@ body {
 
 
 
-
 .offcanvas {
     background-color: var(--primary-body);
 }
+
+
+
+
+.offcanvas-header {
+    padding-right: 1em;
+}
+
+
+
+
+.navbar-toggler i {
+    color: #121212 !important;
+
+}
+
+
+
+
+.offcanvas .btn-close {
+    filter: invert(1) !important;
+}
+
+
+
+.offcanvas .btn-close {
+    position: absolute;
+    left: 27em;
+    top: 1em;
+
+}
+
+
+
+.offcanvas-body ul li{
+   
+    text-align: center;
+}
+
+
+
+
 
 
 .header {
@@ -132,7 +173,7 @@ span .bi-list {
 
 
 .paragraf {
-    color: #F7F7F7;
+    color: #FFFFFF;
     font-weight: 100;
     font-size: .8em;
     letter-spacing: 1px;
