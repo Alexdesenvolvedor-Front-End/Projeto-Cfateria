@@ -103,6 +103,17 @@ h1 {
 
 
 
+h2 {
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 1em;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
 
 
 
@@ -162,7 +173,7 @@ h1 {
 
 .rodape {
     background-color: var(--secondary-font);
-    height: 150px;
+    height: 220px;
 }
 
 
